@@ -1,0 +1,12 @@
+{
+    "name": "nuage-investment",
+    "version": "",
+    "dependencies": {
+        "angular": "",
+        "angular-ui-router": "0.2.10",
+        "angular-translate": "2.1.0"
+    },
+    "devDependencies": {
+        "angular-mocks": ""
+    }
+}
