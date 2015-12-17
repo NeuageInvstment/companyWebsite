@@ -1,1 +1,371 @@
 @import 'variables';
+
+.display-inline {
+    display: inline-block;
+}
+
+// ----------------------------------------------------- //
+//  HEADINGS
+// ----------------------------------------------------- //
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    letter-spacing: 0.4px;
+
+    &.display-inline {
+        display: inline-block;
+    }
+}
+
+// ----------------------------------------------------- //
+//  BUTTON
+// ----------------------------------------------------- //
+.btn {
+    border-radius: 5px;
+    font-weight: 300;
+
+    &:focus,
+    &:active {
+        outline: none !important;
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+         -o-box-shadow: none;
+    }
+
+    &.btn-red {
+        .button-variant(@brand-red-text-color, @brand-red, @brand-red);
+
+        &:hover {
+            background-color: white;
+            color: @brand-red;
+            border-color: 1px solid @brand-red;
+        }
+    }
+
+    &.btn-navy {
+        .button-variant(@brand-navy-text-color, @brand-navy, @brand-navy);
+
+        &:hover {
+            background-color: white;
+            color: @brand-navy;
+            border-color: 1px solid @brand-navy;
+        }
+    }
+}
+
+// ----------------------------------------------------- //
+//  FONT AWESOME ICONS
+// ----------------------------------------------------- //
+.fa {
+
+    .fa-red {
+        color: #FF3366;
+    }
+
+    .fa-blue {
+        color: #007BB5;
+    }
+}
+
+// ----------------------------------------------------- //
+//  LINK
+// ----------------------------------------------------- //
+.a {
+    color: white;
+
+    &:hover,
+    &:active {
+        color: @brand-navy;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+// ----------------------------------------------------- //
+//  SECTION
+// ----------------------------------------------------- //
+.section {
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &.section-light-gray {
+        background-color: #9B9B9B;
+    }
+
+    &.section-full-height {
+        min-height: 100%;
+    }
+
+    &.section-padded-xs {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &.section-padded-sm {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &.section-padded-md {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &.section-padded-lg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    &.section-padded-xl {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &.section-center {
+        text-align: center;
+    }
+
+    &.section-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    &.section-hero {
+        //background-image: url('/images/logo/FEG_Home_1.jpg');
+        background-position: 50% 50%;
+    }
+}
+
+// ----------------------------------------------------- //
+//  PADDING
+// ----------------------------------------------------- //
+.extra-padding-top-xs {
+    padding-top: 5px;
+}
+
+.extra-padding-bottom-xs {
+    padding-bottom: 5px;
+}
+
+.extra-padding-top-sm {
+    padding-top: 10px;
+}
+
+.extra-padding-bottom-sm {
+    padding-bottom: 10px;
+}
+
+.extra-padding-top-md {
+    padding-top: 20px;
+}
+
+.extra-padding-bottom-md {
+    padding-bottom: 20px;
+}
+
+.extra-padding-top-lg {
+    padding-top: 40px;
+}
+
+.extra-padding-bottom-lg {
+    padding-bottom: 40px;
+}
+
+.extra-padding-xs {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.extra-padding-sm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.extra-padding-md {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.extra-padding-lg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.extra-padding-xl {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.extra-padding-top-xl {
+    padding-top: 60px;
+}
+
+.extra-padding-top-2xl {
+    padding-top: 80px;
+}
+
+.extra-padding-left-xs {
+    padding-left: 5px;
+}
+
+.extra-padding-left-sm {
+    padding-left: 10px;
+}
+
+.extra-padding-left-md {
+    padding-left: 20px;
+}
+
+.extra-padding-right-xs {
+    padding-right: 5px;
+}
+
+.extra-padding-right-sm {
+    padding-right: 10px;
+}
+
+.extra-padding-right-md {
+    padding-right: 20px;
+}
+
+.extra-padding-right-lg {
+    padding-right: 40px;
+}
+
+.remove-bottom-padding {
+    padding-bottom: 0px;
+}
+
+.remove-top-padding {
+    padding-top: 0px;
+}
+
+.remove-left-padding {
+    padding-left: 0px;
+}
+
+.remove-right-padding {
+    padding-right: 0px;
+}
+
+.remove-top-bottom-padding {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.remove-all-padding {
+    padding: 0px;
+}
+
+.extra-padding-left-right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// ----------------------------------------------------- //
+//  MARGIN
+// ----------------------------------------------------- //
+.extra-margin-top-xs {
+    margin-top: 5px;
+}
+
+.extra-margin-bottom-xs {
+    margin-bottom: 5px;
+}
+
+.extra-margin-top-sm {
+    margin-top: 10px;
+}
+
+.extra-margin-bottom-sm {
+    margin-bottom: 10px;
+}
+
+.extra-margin-top-md {
+    margin-top: 20px;
+}
+
+.extra-margin-bottom-md {
+    margin-bottom: 20px;
+}
+
+.extra-margin-bottom-lg {
+    margin-bottom: 30px;
+}
+
+.extra-margin-xs {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.extra-margin-sm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.extra-margin-md {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.extra-margin-lg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.extra-margin-xl {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.extra-margin-left-xs {
+    margin-left: 5px;
+}
+
+.extra-margin-left-sm {
+    margin-left: 10px;
+}
+
+.extra-margin-left-md {
+    margin-left: 20px;
+}
+
+.extra-margin-right-xs {
+    margin-right: 5px;
+}
+
+.extra-margin-right-sm {
+    margin-right: 10px;
+}
+
+.extra-margin-right-md {
+    margin-right: 20px;
+}
+
+.remove-bottom-margin {
+    margin-bottom: 0px;
+}
+
+.remove-top-margin {
+    margin-top: 0px;
+}
+
+.remove-top-bottom-margin {
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.remove-all-margin {
+    margin: 0px;
+}
+
+.remove-right-margin {
+    margin-right: 0px;
+}
