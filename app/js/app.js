@@ -5,11 +5,16 @@ var app = angular.module('nuageInvestment', [
 ])
 
 
-    .config(function($stateProvider, $urlRouterProvider, $translateProvider) {
+    .config(['$stateProvider', '$urlRouterProvider' , '$translateProvider', function($stateProvider, $urlRouterProvider, $translateProvider) {
         'use strict';
 
+        $translateProvider.useStaticFilesLoader({
+            prefix: 'localization/locale-',
+            suffix: '.json'
+        });
 
-    })
+        $translateProvider.preferredLanguage('en_US');
+    }])
 
 
     .run(['$rootScope', function($rootScope) {

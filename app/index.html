@@ -8,19 +8,26 @@
 
     <!-- build:css css/nuageInvestment.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/app.css"/>
     <!-- endbuild -->
 </head>
 <body>
 
-    <ui-view></ui-view>
+    <div ui-view id="primary-wrapper"></div>
 
     <!-- build:js js/nuageInvestment.js -->
     <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
     <!-- endbower -->
 
     <script type="text/javascript" src="js/app.js"></script>
@@ -29,6 +36,7 @@
     <script type="text/javascript" src="js/arcus.config.js"></script>
 
     <!-- arcular:controller -->
+    <script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
     <!-- endarcular -->
 
     <!-- arcular:repository -->
@@ -41,6 +49,7 @@
     <!-- endarcular -->
 
     <!-- arcular:data-service -->
+    <script src="js/data-services/LanguageDataService.js"></script>
     <!-- endarcular -->
 
     <!-- arcular:utility -->
