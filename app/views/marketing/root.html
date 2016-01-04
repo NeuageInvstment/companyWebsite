@@ -10,6 +10,11 @@
       </button>
       <a class="navbar-brand" href="#">Nuage</a>
     </div>
+    <form class="navbar-form navbar-left navbar-languaage-select" role="serach">
+        <a class="language-select-link-navbar-marketing" ng-class="{'selected-language-navbar' : selectedLanguage('en_US')}" ng-click="translate('en_US')">EN</a>
+        <p class="text-white display-inline remove-all-margin">/</p>
+        <a class="language-select-link-navbar-marketing" ng-class="{'selected-language-navbar' : selectedLanguage('cn-simplified')}" ng-click="translate('cn-simplified')">中文</a>
+    </form>
     <div class="collapse navbar-collapse" id="nuage-navbar">
       <ul class="nav navbar-nav navbar-right">
         <li data-match-route="/home">
@@ -19,17 +24,12 @@
         </li>
         <li data-match-route="/marketing.team">
             <a class="nav-link" ui-sref="marketing.team">
-                Our Team
+                Team
             </a>
         </li>
         <li data-match-route="/marketing.careers">
             <a class="nav-link" ui-sref="marketing.careers">
                 Careers
-            </a>
-        </li>
-        <li data-match-route="/marketing.blog">
-            <a class="nav-link" ui-sref="marketing.blog">
-                Blog
             </a>
         </li>
         <li data-match-route="/marketing.contact">

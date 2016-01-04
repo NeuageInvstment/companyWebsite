@@ -62,6 +62,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 data: {
                     // bodyClass: 'nav-fixed-top'
                 },
+                controller: 'MarketingCtrl',
                 templateUrl: '/views/marketing/root.html',
                 onEnter: [function() {
 
