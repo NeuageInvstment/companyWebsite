@@ -5,6 +5,7 @@
         "angular": "",
         "angular-ui-router": "0.2.10",
         "angular-translate": "2.1.0",
+        "angular-cookies": "1.4.3",
         "bootstrap": "~3.3.5",
         "angular-bootstrap": "~0.13.0",
         "fontawesome": "~4.3.0",

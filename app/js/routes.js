@@ -5,7 +5,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
 
         
         $urlRouterProvider
-            .when('', '/home')
+            .when('', '/')
             .otherwise('/404');
 
 
@@ -28,7 +28,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
             /* --------------------------------------------------------- */
             .state('home', {
                 abstract: true,
-                url: '/home',
+                url: '/',
                 data: {
                     // bodyClass: 'nav-fixed-top'
                 },
@@ -58,7 +58,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
             /* --------------------------------------------------------- */
             .state('marketing', {
                 abstract: true,
-                url: '/marketing',
+                url: '',
                 data: {
                     // bodyClass: 'nav-fixed-top'
                 },

@@ -9,6 +9,4 @@ angular.module('nuageInvestment').controller('MarketingCtrl', ['$scope', 'Langua
         $scope.selectedLanguage = function(key) {
             return LanguageDataService.getSelectedLanguage() === key;
         };
-
-
     }]);

@@ -1,4 +1,5 @@
 var app = angular.module('nuageInvestment', [
+    'ngCookies',
     'ui.router',
     'pascalprecht.translate',
     'Arcus.Config'
@@ -14,6 +15,7 @@ var app = angular.module('nuageInvestment', [
         });
 
         $translateProvider.preferredLanguage('en_US');
+        $translateProvider.useSanitizeValueStrategy(null);
     }])
 
 

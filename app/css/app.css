@@ -220,10 +220,16 @@ a.language-select-link-navbar {
   cursor: pointer;
 }
 a.selected-language-navbar {
-  color: #d72027;
+  color: #d72027 !important;
+  border-bottom: solid 1px #d72027;
+  padding-bottom: 2px;
 }
 a.language-select-link-navbar-marketing {
   color: white;
+}
+a.language-select-link-navbar-marketing:hover,
+a.language-select-link-navbar-marketing:active {
+  color: #d72027;
 }
 .section {
   position: relative;

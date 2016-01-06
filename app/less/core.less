@@ -93,11 +93,18 @@ a {
     }
 
     &.selected-language-navbar{
-        color: @brand-red;
+        color: @brand-red !important;
+        border-bottom: solid 1px @brand-red;
+        padding-bottom: 2px;
     }
 
     &.language-select-link-navbar-marketing {
         color: white;
+
+        &:hover,
+        &:active {
+            color: @brand-red;
+        }
     }
 }
 
