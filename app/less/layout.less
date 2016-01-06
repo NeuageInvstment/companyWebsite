@@ -21,17 +21,69 @@ body {
     #primary-wrapper {
         height: 100%; 
     }
+    
+    .full-height {
+        height: 100%;
+    }
 
     &.homepage {
         #main-navbar {
             display: none;
         }
     }
+
+    .mainpage {
+        padding-top: 50px;
+
+        @media (max-width: @screen-xs-max) {
+            padding-top: 55px;
+        }
+    }
 }
+
+// ----------------------------------------------------- //
+//  Navbar
+// ----------------------------------------------------- //
+.navbar {
+    border-radius: 0px;
+    &.navbar-primary {
+        background-color: @brand-navy;
+
+        #nuage-navbar {
+
+            .nav-link {
+                color: white;
+
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+                    color:@brand-red;
+                }
+            }
+
+        }
+
+    }
+
+}
+// ----------------------------------------------------- //
+//  FOOTER
+// ----------------------------------------------------- //
 
 // ----------------------------------------------------- //
 //  HOME - PAGE
 // ----------------------------------------------------- //
+#navbar-home {
+    .nav-link {
+        color: @brand-red;
+
+        &:hover,
+        &:active {
+            background-color: transparent;
+            color: @brand-navy;
+        }
+    }
+}
 
 // ----------------------------------------------------- //
 //  TEAM - PAGE

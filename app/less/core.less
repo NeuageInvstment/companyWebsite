@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
         .button-variant(@brand-red-text-color, @brand-red, @brand-red);
 
         &:hover {
-            background-color: white;
+            background-color: transparent;
             color: @brand-red;
             border-color: 1px solid @brand-red;
         }
@@ -61,19 +61,23 @@ h1, h2, h3, h4, h5, h6 {
 // ----------------------------------------------------- //
 .fa {
 
-    .fa-red {
+    &.fa-red {
         color: #FF3366;
     }
 
-    .fa-blue {
+    &.fa-blue {
         color: #007BB5;
+    }
+
+    &.fa-white {
+        color: white;
     }
 }
 
 // ----------------------------------------------------- //
 //  LINK
 // ----------------------------------------------------- //
-.a {
+a {
     color: white;
 
     &:hover,
@@ -81,6 +85,26 @@ h1, h2, h3, h4, h5, h6 {
         color: @brand-navy;
         cursor: pointer;
         text-decoration: none;
+    }
+
+    &.language-select-link-navbar{
+        color:@brand-navy;
+        cursor: pointer;
+    }
+
+    &.selected-language-navbar{
+        color: @brand-red !important;
+        border-bottom: solid 1px @brand-red;
+        padding-bottom: 2px;
+    }
+
+    &.language-select-link-navbar-marketing {
+        color: white;
+
+        &:hover,
+        &:active {
+            color: @brand-red;
+        }
     }
 }
 
@@ -96,6 +120,10 @@ h1, h2, h3, h4, h5, h6 {
 
     &.section-light-gray {
         background-color: #9B9B9B;
+    }
+    
+    &.section-navy {
+        background-color: @brand-navy;
     }
 
     &.section-full-height {
@@ -138,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &.section-hero {
-        //background-image: url('/images/logo/FEG_Home_1.jpg');
+        background-image: url('/images/boston-hero.jpg');
         background-position: 50% 50%;
     }
 }
@@ -368,4 +396,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .remove-right-margin {
     margin-right: 0px;
+}
+
+// ----------------------------------------------------- //
+//  TEXT
+// ----------------------------------------------------- //
+.text-red {
+    color: @brand-red 
+}
+
+.text-navy {
+    color: @brand-navy; 
+}
+
+.text-white {
+    color: white;
+}
+
+// ----------------------------------------------------- //
+//  FORM
+// ----------------------------------------------------- //
+form {
+    &.navbar-languaage-select {
+        margin: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
 }
