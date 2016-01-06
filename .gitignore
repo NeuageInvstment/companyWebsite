@@ -5,5 +5,6 @@ app/bower_components
 .tmp/
 .idea
 *.iml
+app/css
 .DS_Store
 .sass-cache/
