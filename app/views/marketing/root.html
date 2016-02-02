@@ -1,5 +1,5 @@
-<nav class="navbar navbar-primary">
-  <div class="container extra-padding-sm">
+<nav class="navbar navbar-primary remove-bottom-margin">
+  <div class="container extra-padding-md">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nuage-navbar" aria-expanded="false">
@@ -20,6 +20,11 @@
         <li data-match-route="/home">
             <a class="nav-link" ui-sref="home.main">
                 {{"HOME" | translate}}
+            </a>
+        </li>
+        <li data-match-route="/marketing.service">
+            <a class="nav-link" ui-sref="marketing.service">
+                {{"SERVICE" | translate}}
             </a>
         </li>
         <li data-match-route="/marketing.team">

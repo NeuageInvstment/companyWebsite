@@ -70,6 +70,18 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
             })
 
                 // --------------------------------------------------------- //
+                //  MARKETING - SERVICE
+                // --------------------------------------------------------- //
+                .state('marketing.service', {
+                    url: '/service',
+                    templateUrl: '/views/marketing/service.html',
+                    onEnter: [function() {
+                        
+                    }]
+                })
+
+
+                // --------------------------------------------------------- //
                 //  MARKETING - TEAM
                 // --------------------------------------------------------- //
                 .state('marketing.team', {

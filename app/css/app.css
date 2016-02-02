@@ -238,7 +238,7 @@ a.language-select-link-navbar-marketing:active {
   position: relative;
 }
 .section.section-light-gray {
-  background-color: #9B9B9B;
+  background-color: #ddd;
 }
 .section.section-navy {
   background-color: #394349;
@@ -277,6 +277,21 @@ a.language-select-link-navbar-marketing:active {
 .section.section-hero {
   background-image: url('/images/boston-hero.jpg');
   background-position: 50% 50%;
+  min-height: 80%;
+}
+.section .section-header {
+  font-size: 30px;
+  color: #394349;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.section .section-sub-header {
+  font-size: 22px;
+  color: #d72027;
+}
+.section .sub-section-info-wrapper {
+  margin-bottom: 20px;
 }
 .extra-padding-top-xs {
   padding-top: 5px;
@@ -455,6 +470,9 @@ a.language-select-link-navbar-marketing:active {
 }
 .text-white {
   color: white;
+}
+.text-hero {
+  vertical-align: middle;
 }
 form.navbar-languaage-select {
   margin: 0;

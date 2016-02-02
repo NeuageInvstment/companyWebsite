@@ -1,5 +1,5 @@
 <section class="section section-hero section-center section-image section-full-height">
-    <div class="container extra-padding-sm">
+    <div class="container extra-padding-md">
         <nav class="navbar" id="navbar-home">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -21,6 +21,11 @@
                     <li data-match-route="/home">
                         <a class="nav-link" ui-sref="home.main">
                             {{"HOME" | translate}}
+                        </a>
+                    </li>
+                    <li data-match-route="/marketing.service">
+                        <a class="nav-link" ui-sref="marketing.service">
+                            {{"SERVICE" | translate}}
                         </a>
                     </li>
                     <li data-match-route="/marketing.team">
@@ -47,19 +52,24 @@
             </div>
         </nav>
     </div>
-    <section class="section section-center section-padded-lg">
+    <section class="section section-center">
         <div class="container">
-            <div class="row col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
-                <h1 class="text-center text-hero">Real Estate Brokage. Investment. Private Placement</h1>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                    <div class="hero-title-wrapper">
+                        <h1 class="text-center text-hero">Real Estate Brokage. Investment. Private Placement</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </section>
-<section class="section section-full-height">
+<section class="section section-padded-sm">
     <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+        <h1 class="section-header">{{"WELCOME" | translate}}</h1>
+        <h4 class="extra-padding-top-sm">{{"WELCOME_1" | translate}}</h4>
+        <h4>{{"WELCOME_2" | translate}}</h4>
+        <h4>{{"WELCOME_3" | translate}}</h4>
     </div>
 </section>
 <div ng-include="'/views/partials/footer.html'"></div>
