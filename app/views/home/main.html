@@ -71,8 +71,12 @@
         <h4>{{"WELCOME_2" | translate}}</h4>
         <h4>{{"WELCOME_3" | translate}}</h4>
         <div class="angular-google-map-container">
+        <!-- <iframe src="https://www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK
+            &zoom=17
+            &key=AIzaSyDQxuLpCNoG4V4pgnQ3qvuXVsaR4RggVcs">
+        </iframe> -->
             <ui-gmap-google-map center='map.center' zoom='map.zoom'>
-                <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+                <ui-gmap-marker coords="marker.coords" options="marker.options" label="marker.label" idkey="marker.id">
                 </ui-gmap-marker>
             </ui-gmap-google-map>
         </div>

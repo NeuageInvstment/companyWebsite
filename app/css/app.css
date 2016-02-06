@@ -482,6 +482,11 @@ form.navbar-languaage-select {
 .angular-google-map-container {
   height: 400px;
 }
+.angular-google-map-container .marker-labels {
+  color: #d72027;
+  font-size: 12px;
+  font-weight: bold;
+}
 html,
 body {
   height: 100%;
