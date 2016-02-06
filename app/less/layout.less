@@ -9,8 +9,10 @@ body {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-family: @font-family-text;
-    font-weight: 300;
+    //font-family: @font-family-text;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     input {
         -webkit-appearance: none; 
@@ -83,6 +85,14 @@ body {
         &:active {
             background-color: transparent;
             color: @brand-navy;
+        }
+    }
+
+    .no-csseffect-link {
+        &:hover,
+        &:active {
+            background-color: transparent;
+            color: white;
         }
     }
 }

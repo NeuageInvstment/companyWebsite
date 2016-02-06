@@ -215,6 +215,14 @@ a:active {
   cursor: pointer;
   text-decoration: none;
 }
+a.contact-link {
+  color: #394349;
+}
+a.contact-link:hover,
+a.contact-link:active {
+  cursor: pointer;
+  text-decoration: none;
+}
 a.language-select-link-navbar {
   color: #394349;
   cursor: pointer;
@@ -487,8 +495,9 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body input {
   -webkit-appearance: none;
@@ -534,6 +543,11 @@ body .mainpage {
 #navbar-home .nav-link:active {
   background-color: transparent;
   color: #394349;
+}
+#navbar-home .no-csseffect-link:hover,
+#navbar-home .no-csseffect-link:active {
+  background-color: transparent;
+  color: white;
 }
 .map-container {
   height: 400px;
