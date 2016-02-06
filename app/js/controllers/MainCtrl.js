@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('MainCtrl', ['$scope', 'LanguageDataService',
-    function($scope, LanguageDataService) {
+angular.module('nuageInvestment').controller('MainCtrl', ['$scope', 'LanguageDataService', 'TELEPHONE', 'EMAIL',
+    function($scope, LanguageDataService, TELEPHONE, EMAIL) {
         'use strict';
 
         $scope.scroll = 0; 
@@ -11,32 +11,7 @@ angular.module('nuageInvestment').controller('MainCtrl', ['$scope', 'LanguageDat
             return LanguageDataService.getSelectedLanguage() === key;
         };
 
-        $scope.map = { 
-            center: { 
-                latitude: 42.3494107, 
-                longitude: -71.2242629 
-            }, 
-            zoom: 17
-        };
-        
-        var label = {
-            address : 'Nuage Investment Realty',
-            anchor: '-15 12',
-            style: 'marker-labels'
-        } 
-
-        $scope.marker = {
-            id: 0,
-            coords : {
-                latitude: 42.349445,
-                longitude: -71.222065
-            },
-            options: {
-                labelContent: label.address,
-                labelAnchor: label.anchor,
-                labelClass: label.style,
-                labelVisible: true
-            }
-        };
+        $scope.telephone = TELEPHONE;
+        $scope.email = EMAIL;
 
     }]);

@@ -38,15 +38,15 @@
                             {{"CAREERS" | translate}}
                         </a>
                     </li>
-                    <li data-match-route="/marketing.contact">
-                        <a class="nav-link" ui-sref="marketing.contact">
-                            {{"CONTACT" | translate}}
+                    <li data-match-route="/marketing.partners">
+                        <a class="nav-link" ui-sref="marketing.partners">
+                            {{"PARTNERS" | translate}}
                         </a>
                     </li>
                     <li>
-                        <a class="btn btn-red btn-sm" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">
-                            {{"PROPERTY_SEARCH" | translate}}
-                        </a>
+                        <md-button class="md-raised md-primary pull-right">
+                            <a class="no-csseffect-link" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">{{"PROPERTY_SEARCH" | translate}}</a>
+                        </md-button>
                     </li>
                 </ul>
             </div>
@@ -74,9 +74,42 @@
 </section>
 <section class="section section-padded-sm section-light-gray">
     <div class="container">
-        <h1 class="section-header">{{"CONTACT" | translate}}</h1>
-        <div class="map-container">
-            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Nuage+Investment+Realty,+Washington+Street,+Newton,+MA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+        <h1 class="section-header extra-padding-bottom-md extra-margin-bottom-sm">{{"CONTACT" | translate}}</h1>
+        <div class="row">
+            <div class="col-md-5">
+                <h3 class="text-center extra-padding-bottom-sm text-red">Say Hello</h3>
+                <h4>Do you have an investment project in mind or simply want to buy a house? Either way don't hesitate to contact us</h4>
+                <form class="extra-padding-sm" ng-submit="submit">
+                    <md-input-container class="md-block extra-padding-top-sm" >
+                        <label>Name</label>
+                        <input ng-model="user.name">
+                    </md-input-container>
+                    <md-input-container class="md-block extra-padding-top-sm" >
+                        <label>Email</label>
+                        <input ng-model="user.email">
+                    </md-input-container>
+                    <md-input-container class="md-block extra-padding-top-sm">
+                        <label>Message</label>
+                        <textarea ng-model="user.message" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+                    </md-input-container>
+                    <md-button class="md-raised md-primary pull-right">{{"SUBMIT" | translate}}</md-button>
+                </form>
+            </div>
+            <div class="col-md-5 pull-right">
+                <h3 class="text-center extra-padding-bottom-sm text-red">Where we are</h3>
+                <div class="map-container">
+                    <iframe class="map" src="https://www.google.com/maps/embed/v1/place?q=Nuage+Investment+Realty,+Washington+Street,+Newton,+MA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                </div>
+                <div class="row extra-padding-sm">
+                    <div class="col-xs-12">
+                        <ul class="fa-ul">
+                            <li><h5><i class="fa fa-map-marker extra-margin-right-sm fa-li"></i>1185 Washington Street Suite #1 Newton, MA 02465</h5></li>
+                            <li><h5><a class="contact-link" href="tel:{{telephone}}"><i class="fa fa-mobile  extra-margin-right-sm fa-li"></i>+1 (617) 678-3889</a></h5></li>
+                            <li><h5><a class="contact-link" href="mailto:{{email}}"><i class="fa fa-envelope-o  extra-margin-right-sm fa-li"></i>info@nuageinvrealty.com</a></h5></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

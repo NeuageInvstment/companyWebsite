@@ -3,11 +3,11 @@ var app = angular.module('nuageInvestment', [
     'ui.router',
     'pascalprecht.translate',
     'Arcus.Config',
-    'uiGmapgoogle-maps'
+    'ngMaterial'
 ])
 
 
-    .config(['$stateProvider', '$urlRouterProvider' , '$translateProvider', 'uiGmapGoogleMapApiProvider', function($stateProvider, $urlRouterProvider, $translateProvider, uiGmapGoogleMapApiProvider) {
+    .config(['$stateProvider', '$urlRouterProvider' , '$translateProvider', function($stateProvider, $urlRouterProvider, $translateProvider) {
         'use strict';
 
         $translateProvider.useStaticFilesLoader({

@@ -104,11 +104,11 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 })
 
                 // --------------------------------------------------------- //
-                //  MARKETING - CONTACT
+                //  MARKETING - PARTNERS
                 // --------------------------------------------------------- //
-                .state('marketing.contact', {
-                    url: '/contact',
-                    templateUrl: '/views/marketing/contact.html',
+                .state('marketing.partners', {
+                    url: '/partners',
+                    templateUrl: '/views/marketing/partners.html',
                     onEnter: [function() {
                         
                     }]
