@@ -488,7 +488,7 @@ body {
   padding: 0;
   border: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 body input {
   -webkit-appearance: none;
@@ -537,4 +537,9 @@ body .mainpage {
 }
 .map-container {
   height: 400px;
+}
+.map-container .map {
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
