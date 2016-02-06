@@ -238,7 +238,7 @@ a.language-select-link-navbar-marketing:active {
   position: relative;
 }
 .section.section-light-gray {
-  background-color: #ddd;
+  background-color: #F0F0EA;
 }
 .section.section-navy {
   background-color: #394349;
@@ -479,14 +479,6 @@ form.navbar-languaage-select {
   padding-bottom: 15px;
   padding-top: 15px;
 }
-.angular-google-map-container {
-  height: 400px;
-}
-.angular-google-map-container .marker-labels {
-  color: #d72027;
-  font-size: 12px;
-  font-weight: bold;
-}
 html,
 body {
   height: 100%;
@@ -495,6 +487,8 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 body input {
   -webkit-appearance: none;
@@ -540,4 +534,7 @@ body .mainpage {
 #navbar-home .nav-link:active {
   background-color: transparent;
   color: #394349;
+}
+.map-container {
+  height: 400px;
 }
