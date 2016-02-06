@@ -1,17 +1,18 @@
 {
-    "name": "nuage-investment",
-    "version": "",
-    "dependencies": {
-        "angular": "",
-        "angular-ui-router": "0.2.10",
-        "angular-translate": "2.1.0",
-        "angular-cookies": "1.4.3",
-        "bootstrap": "~3.3.5",
-        "angular-bootstrap": "~0.13.0",
-        "fontawesome": "~4.3.0",
-        "angular-translate-loader-static-files": "*"
-    },
-    "devDependencies": {
-        "angular-mocks": ""
-    }
+  "name": "nuage-investment",
+  "version": "",
+  "dependencies": {
+    "angular": "",
+    "angular-bootstrap": "~0.13.0",
+    "angular-cookies": "1.4.3",
+    "angular-google-maps": "~2.3.1",
+    "angular-translate": "2.1.0",
+    "angular-translate-loader-static-files": "*",
+    "angular-ui-router": "0.2.10",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "angular-mocks": ""
+  }
 }
