@@ -3,6 +3,7 @@ var app = angular.module('nuageInvestment', [
     'ui.router',
     'pascalprecht.translate',
     'Arcus.Config',
+    'arcus.utilities',
     'ngMaterial'
 ])
 

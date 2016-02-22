@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('MainCtrl', ['$scope', 'LanguageDataService', 'TELEPHONE', 'EMAIL',
-    function($scope, LanguageDataService, TELEPHONE, EMAIL) {
+angular.module('nuageInvestment').controller('MainCtrl', ['$scope', '$http', 'LanguageDataService',
+    function($scope,$http, LanguageDataService) {
         'use strict';
 
         $scope.scroll = 0; 
@@ -11,7 +11,23 @@ angular.module('nuageInvestment').controller('MainCtrl', ['$scope', 'LanguageDat
             return LanguageDataService.getSelectedLanguage() === key;
         };
 
-        $scope.telephone = TELEPHONE;
-        $scope.email = EMAIL;
+        $scope.telephone = "+1(617)678 3889";
+        $scope.email = "info@nuageinvrealty.com";
+
+        $scope.sendMessage = function() {
+            
+            var message = {
+                name: this.messagnerName,
+                email: this.messagnerEmail,
+                message: this.messangerMessage
+            };
+
+
+           $http.post('/contact', message)
+               .success(function(data, status){
+                   
+               });
+        }
+
 
     }]);

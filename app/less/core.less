@@ -72,12 +72,17 @@ h1, h2, h3, h4, h5, h6 {
     &.fa-white {
         color: white;
     }
+
+    &.fa-linkedIn-color {
+        color: #4875B4
+    }
 }
 
 // ----------------------------------------------------- //
 //  LINK
 // ----------------------------------------------------- //
 a {
+
     color: white;
 
     &:hover,
@@ -87,6 +92,20 @@ a {
         text-decoration: none;
     }
     
+    &.nav-link-button {
+        &:hover,
+        &:active {
+            background-color: transparent;
+            color: white;
+        }
+    }
+
+    &.linkedin-link {
+        color: #4875B4;
+    }
+    &.email-link {
+        color: #C63D2D;
+    }
     &.contact-link {
         color: @brand-navy;
 

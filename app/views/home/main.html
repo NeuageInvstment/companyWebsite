@@ -1,4 +1,4 @@
-<section class="section section-hero section-center section-image section-full-height">
+<section class="section section-hero section-center section-image">
     <div class="container extra-padding-md">
         <nav class="navbar" id="navbar-home">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -45,19 +45,21 @@
                     </li>
                     <li>
                         <md-button class="md-raised md-primary pull-right">
-                            <a class="no-csseffect-link" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">{{"PROPERTY_SEARCH" | translate}}</a>
+                            <a class="nav-link-button" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">{{"PROPERTY_SEARCH" | translate}}</a>
                         </md-button>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
-    <section class="section section-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
-                    <div class="hero-title-wrapper">
-                        <h1 class="text-center text-hero">Real Estate Brokage. Investment. Private Placement</h1>
+    <section class="section section-center" style="min-height: 400px;">
+        <div style="min-height: 100%;">
+            <div class="container" style="min-height: 100%; display: table" >
+                <div class="row" style="min-height: 100%; display: table-cell; vertical-align: middle;">
+                    <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2" style="min-height: 100%; display: table-cell; vertical-align: middle;">
+                        <div class="hero-title-wrapper" style="min-height: 100%; display: table-cell; vertical-align: middle;">
+                            <h1 class="text-center text-hero">Real Estate Brokage. Investment. Private Placement</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,20 +81,20 @@
             <div class="col-md-5">
                 <h3 class="text-center extra-padding-bottom-sm text-red">Say Hello</h3>
                 <h4>Do you have an investment project in mind or simply want to buy a house? Either way don't hesitate to contact us</h4>
-                <form class="extra-padding-sm" ng-submit="submit">
+                <form class="extra-padding-sm" ng-submit="sendMessage()">
                     <md-input-container class="md-block extra-padding-top-sm" >
                         <label>Name</label>
-                        <input ng-model="user.name">
+                        <input type="text" ng-model="messagnerName" ng-required="true">
                     </md-input-container>
                     <md-input-container class="md-block extra-padding-top-sm" >
                         <label>Email</label>
-                        <input ng-model="user.email">
+                        <input type="email" ng-model="messagnerEmail" ng-required="true">
                     </md-input-container>
                     <md-input-container class="md-block extra-padding-top-sm">
                         <label>Message</label>
-                        <textarea ng-model="user.message" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+                        <textarea ng-model="messangerMessage" md-maxlength="150" rows="5" md-select-on-focus="" ng-required="true"></textarea>
                     </md-input-container>
-                    <md-button class="md-raised md-primary pull-right">{{"SUBMIT" | translate}}</md-button>
+                    <md-button type="submit" class="md-raised md-primary pull-right">{{"SUBMIT" | translate}}</md-button>
                 </form>
             </div>
             <div class="col-md-5 pull-right">
@@ -105,7 +107,7 @@
                         <ul class="fa-ul">
                             <li><h5><i class="fa fa-map-marker extra-margin-right-sm fa-li"></i>1185 Washington Street Suite #1 Newton, MA 02465</h5></li>
                             <li><h5><a class="contact-link" href="tel:{{telephone}}"><i class="fa fa-mobile  extra-margin-right-sm fa-li"></i>+1 (617) 678-3889</a></h5></li>
-                            <li><h5><a class="contact-link" href="mailto:{{email}}"><i class="fa fa-envelope-o  extra-margin-right-sm fa-li"></i>info@nuageinvrealty.com</a></h5></li>
+                            <li><h5><a class="contact-link" href="mailto:{{email}}"><i class="fa fa-envelope-o  extra-margin-right-sm fa-li"></i>{{email}}</a></h5></li>
                         </ul>
                     </div>
                 </div>

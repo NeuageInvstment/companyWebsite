@@ -206,6 +206,9 @@ fieldset[disabled] .btn.btn-navy.focus {
 .fa.fa-white {
   color: white;
 }
+.fa.fa-linkedIn-color {
+  color: #4875b4;
+}
 a {
   color: white;
 }
@@ -214,6 +217,17 @@ a:active {
   color: #394349;
   cursor: pointer;
   text-decoration: none;
+}
+a.nav-link-button:hover,
+a.nav-link-button:active {
+  background-color: transparent;
+  color: white;
+}
+a.linkedin-link {
+  color: #4875B4;
+}
+a.email-link {
+  color: #C63D2D;
 }
 a.contact-link {
   color: #394349;
@@ -543,11 +557,6 @@ body .mainpage {
 #navbar-home .nav-link:active {
   background-color: transparent;
   color: #394349;
-}
-#navbar-home .no-csseffect-link:hover,
-#navbar-home .no-csseffect-link:active {
-  background-color: transparent;
-  color: white;
 }
 .map-container {
   height: 400px;
