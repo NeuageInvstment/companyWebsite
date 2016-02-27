@@ -86,6 +86,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 // --------------------------------------------------------- //
                 .state('marketing.team', {
                     url: '/team',
+                    controller: 'TeamCtrl',
                     templateUrl: '/views/marketing/team.html',
                     onEnter: [function() {
                         
