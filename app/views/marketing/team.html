@@ -2,14 +2,14 @@
     <div class="container">
         <div class="row extra-padding-top-md">
             <h2 class="text-navy">Boston</h2>
-            <div class="col-md-3 extra-padding-bottom-sm" ng-repeat="bostonEmployee in bostonEmployees" style="height: 280px">
-                <img src={{bostonEmployee.profileImageURI}} class="img-responsive img-circle" style="height:120px; width:120px;">
-                <h5 class="display-inline remove-bottom-margin">{{bostonEmployee.fullName}}</h5>
-                <h5 class="display-inline remove-bottom-margin" ng-hide="bostonEmployee.certificate == null">, {{bostonEmployee.certificate}} </h5>
-                <h5 class="display-inline remove-bottom-margin" ng-hide="bostonEmployee.certificate == null || bostonEmployee.certificate == 'CPA'">&reg;</h5>
+            <div class="col-md-3 extra-padding-bottom-sm" ng-repeat="bostonEmployee in bostonEmployees" style="height: 300px">
+                <img src={{bostonEmployee.profileImageURI}} class="img-responsive img-circle" style="height:130px; width:130px;">
+                <h5 class="display-inline remove-bottom-margin"><strong>{{bostonEmployee.fullName}}</strong></h5>
+                <h5 class="display-inline remove-bottom-margin" ng-hide="bostonEmployee.certificate == null"><strong>, {{bostonEmployee.certificate}} </strong></h5>
+                <h5 class="display-inline remove-bottom-margin" ng-hide="bostonEmployee.certificate == null || bostonEmployee.certificate == 'CPA'"><strong>&reg;</strong></h5>
                 <h5 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{bostonEmployee.title}}</i></h5>
                 <ul class="fa-ul" style="margin-left: 23px;">
-                    <li><i class="fa-li fa fa-envelope-o"></i>{{bostonEmployee.email}}</li>
+                    <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{bostonEmployee.email}}">{{bostonEmployee.email}}</a></li>
                     <li><i class="fa-li fa fa-phone"></i>{{bostonEmployee.phoneNumber}}</li>
                     <li ng-hide="bostonEmployee.wechatId == null"><i class="fa-li fa fa-wechat"></i>{{bostonEmployee.wechatId}}</li>
                     <li><i class="fa-li fa fa-globe"></i>{{bostonEmployee.language}}</li>
@@ -26,12 +26,12 @@
         </div>
         <div class="row extra-padding-bottom-md extra-padding-top-sm">
             <div class="col-md-3" ng-repeat="newYorkEmployee in newYorkEmployees" style="padding-left: 15px">
-                <h5 class="display-inline remove-bottom-margin">{{newYorkEmployee.fullName}}</h5>
-                <h5 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null">, {{newYorkEmployee.certificate}} </h5>
-                <h5 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null || newYorkEmployee.certificate == 'CPA'">&reg;</h5>
+                <h5 class="display-inline remove-bottom-margin"><strong>{{newYorkEmployee.fullName}}</strong></h5>
+                <h5 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null"><strong>, {{newYorkEmployee.certificate}}</strong> </h5>
+                <h5 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null || newYorkEmployee.certificate == 'CPA'"><strong>&reg;</strong></h5>
                 <h5 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{newYorkEmployee.title}}</i></h5>
                 <ul class="fa-ul" style="margin-left: 23px;">
-                    <li><i class="fa-li fa fa-envelope-o"></i>{{newYorkEmployee.email}}</li>
+                    <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{newYorkEmployee.email}}">{{newYorkEmployee.email}}</a></li>
                     <li><i class="fa-li fa fa-phone"></i>{{newYorkEmployee.phoneNumber}}</li>
                     <li ng-hide="newYorkEmployee.wechatId == null"><i class="fa-li fa fa-wechat"></i>{{newYorkEmployee.wechatId}}</li>
                     <li><i class="fa-li fa fa-globe"></i>{{newYorkEmployee.language}}</li>
@@ -39,12 +39,12 @@
             </div>
             <div class="col-md-3">
                 <div ng-repeat="connecticutEmployee in connecticutEmployees">
-                    <h5 class="display-inline remove-bottom-margin">{{connecticutEmployee.fullName}}</h5>
-                    <h5 class="display-inline remove-bottom-margin" ng-hide="connecticutEmployee.certificate == null">, {{connecticutEmployee.certificate}} </h5>
-                    <h5 class="display-inline remove-bottom-margin" ng-hide="connecticutEmployee.certificate == null || connecticutEmployee.certificate == 'CPA'">&reg;</h5>
+                    <h5 class="display-inline remove-bottom-margin"><strong>{{connecticutEmployee.fullName}}</strong></h5>
+                    <h5 class="display-inline remove-bottom-margin" ng-hide="connecticutEmployee.certificate == null"><strong>, {{connecticutEmployee.certificate}}</strong> </h5>
+                    <h5 class="display-inline remove-bottom-margin" ng-hide="connecticutEmployee.certificate == null || connecticutEmployee.certificate == 'CPA'"><strong>&reg;</strong></h5>
                     <h5 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{connecticutEmployee.title}}</i></h5>
                     <ul class="fa-ul" style="margin-left: 23px;">
-                        <li><i class="fa-li fa fa-envelope-o"></i>{{connecticutEmployee.email}}</li>
+                        <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{connecticutEmployee.email}}">{{connecticutEmployee.email}}</a></li>
                         <li><i class="fa-li fa fa-phone"></i>{{connecticutEmployee.phoneNumber}}</li>
                         <li ng-hide="connecticutEmployee.wechatId == null"><i class="fa-li fa fa-wechat"></i>{{connecticutEmployee.wechatId}}</li>
                         <li><i class="fa-li fa fa-globe"></i>{{connecticutEmployee.language}}</li>
@@ -55,12 +55,12 @@
         <div class="row extra-padding-md">
             <h2 class="text-navy remove-top-margin">China</h2>
             <div class="col-md-3" ng-repeat="overSeaEmployee in overSeaEmployees">
-                <h5 class="display-inline remove-bottom-margin">{{overSeaEmployee.fullName}}</h5>
+                <h5 class="display-inline remove-bottom-margin"><strong>{{overSeaEmployee.fullName}}</strong></h5>
                 <h5 class="display-inline remove-bottom-margin" ng-hide="overSeaEmployee.certificate == null">, {{overSeaEmployee.certificate}} </h5>
                 <h5 class="display-inline remove-bottom-margin" ng-hide="overSeaEmployee.certificate == null || overSeaEmployee.certificate == 'CPA'">&reg;</h5>
                 <h5 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{overSeaEmployee.title}}</i></h5>
                 <ul class="fa-ul" style="margin-left: 23px;">
-                    <li><i class="fa-li fa fa-envelope-o"></i>{{overSeaEmployee.email}}</li>
+                    <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{overSeaEmployee.email}}">{{overSeaEmployee.email}}</a></li>
                     <li><i class="fa-li fa fa-phone"></i>{{overSeaEmployee.phoneNumber}}</li>
                     <li ng-hide="overSeaEmployee.wechatId == null"><i class="fa-li fa fa-wechat"></i>{{overSeaEmployee.wechatId}}</li>
                     <li><i class="fa-li fa fa-globe"></i>{{overSeaEmployee.language}}</li>
