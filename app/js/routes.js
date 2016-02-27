@@ -80,6 +80,38 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                     }]
                 })
 
+                    // --------------------------------------------------------- //
+                    //  MARKETING - SERVICE - RETAIL
+                    // --------------------------------------------------------- //
+                    .state('marketing.retail', {
+                        url: '/retail',
+                        templateUrl: '/views/marketing/retail.html',
+                        onEnter: [function() {
+
+                        }]
+                    })
+
+                    // --------------------------------------------------------- //
+                    //  MARKETING - SERVICE - COMMERCIAL
+                    // --------------------------------------------------------- //
+                    .state('marketing.commercial', {
+                        url: '/commercial',
+                        templateUrl: '/views/marketing/commercial.html',
+                        onEnter: [function() {
+
+                        }]
+                    })
+
+                    // --------------------------------------------------------- //
+                    //  MARKETING - SERVICE - COMMERCIAL
+                    // --------------------------------------------------------- //
+                    .state('marketing.eb-5', {
+                        url: '/eb-5',
+                        templateUrl: '/views/marketing/eb-5.html',
+                        onEnter: [function() {
+
+                        }]
+                    })
 
                 // --------------------------------------------------------- //
                 //  MARKETING - TEAM

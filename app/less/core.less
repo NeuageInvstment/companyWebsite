@@ -11,7 +11,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     letter-spacing: 0.4px;
-
+    line-height: 26px;
     &.display-inline {
         display: inline-block;
     }
@@ -98,6 +98,14 @@ a {
             background-color: transparent;
             color: white;
         }
+    }
+
+    &.service-link {
+        color: #4875B4;
+            &:hover,
+            &:active {
+                color: @brand-red;
+            }
     }
 
     &.linkedin-link {
