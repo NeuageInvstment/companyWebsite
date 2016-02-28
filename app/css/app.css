@@ -509,6 +509,12 @@ form.navbar-languaage-select {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+.table tr th {
+  text-align: center;
+}
+.table tr td {
+  text-align: center;
+}
 html,
 body {
   height: 100%;
