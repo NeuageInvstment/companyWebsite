@@ -1,1 +1,31 @@
-<h3>contacts</h3>
+<section class="section section-padded-md">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <dic class="table-respnsive">
+                    <table class="table table-bordered table-condensed table-striped ">
+                        <thead>
+                            <th COLSPAN="5">Market Overview</th>
+                            <tr>
+                                <th><h5><strong>City</strong></h5></th>
+                                <th><h5><strong>Home Value Index</strong></h5></th>
+                                <th><h5><strong>1-Year Change</strong></h5></th>
+                                <th><h5><strong>1-Year Forecast</strong></h5></th>
+                                <th><h5><strong>Index (Per Month)</strong></h5></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="cityIndex in MarketIndex">
+                                <td><h5>{{cityIndex.name}}</h5></td>
+                                <td><h5>{{cityIndex.homeValueIndex | currency}}</h5></td>
+                                <td><h5>{{cityIndex.oneYearChange}}</h5></td>
+                                <td><h5>{{cityIndex.oneYearForecast}}<h5></td>
+                                <td><h5>{{cityIndex.rentIndex | currency}}</h5></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dic>
+            </div>
+        </div>
+    </div>
+</section>

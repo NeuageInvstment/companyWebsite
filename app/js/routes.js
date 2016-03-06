@@ -141,6 +141,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 // --------------------------------------------------------- //
                 .state('marketing.resources', {
                     url: '/resources',
+                    controller: 'ResourcesCtrl',
                     templateUrl: '/views/marketing/resources.html',
                     onEnter: [function() {
 
