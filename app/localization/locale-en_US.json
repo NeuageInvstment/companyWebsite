@@ -141,8 +141,10 @@
     "EB5_SERVICE_TITLE": "Our Services",
     "EB5_SERVICE_PARAGRAPH_1": "Nuage works with developers and regional centers to raise capital for their projects.  Depending on the type of investor you are, your preferences and concerns, we will recommend a project that best match your needs. Although investment and immigration results are not guaranteed, we perform our own due diligence and we work with immigration attorneys to evaluate each project before it is presented to you. We also encourage maximum transparency by coordinating onsite visits and direct communication with project developers.",
     "EB5_SERVICE_PARAGRAPH_2": "Besides regional center projects where investors are investing indirectly, direct investment through acquisition of a commercial project has becoming very popular.  Some investors prefer this type of investment because they are investing in their own project where they are holding equity ownership. Some investors also believe it is the best way to reduce risk because the project is controlled by the investors.",
-    "EB5_SERVICE_PARAGRAPH_3": "Please see our international investor's guide for commercial properties and contact us for direct investment opportunities."
+    "EB5_SERVICE_PARAGRAPH_3": "Please see our international investor's guide for commercial properties and contact us for direct investment opportunities.",
 
-
+    "HOME_VALUE_INDEX": "Home Value Index Overview",
+    "TAX_RESIDENTIAL_EXCEPTION": "Tax and Residential Exception",
+    "TAX_Rate_2016": "Fiscal year 2016 Tax Rates (Per $1000)"
 
 }

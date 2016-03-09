@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('ResourcesCtrl', ['$scope', 'MarketIndexPerCityModel',
-    function($scope, MarketIndexPerCity) {
+angular.module('nuageInvestment').controller('ResourcesCtrl', ['$scope', 'MarketIndexPerCityModel', 'CityTaxRateModel',
+    function($scope, MarketIndexPerCity, CityTaxRate) {
         'use strict';
 
         $scope.MarketIndex = [
@@ -96,5 +96,98 @@ angular.module('nuageInvestment').controller('ResourcesCtrl', ['$scope', 'Market
             })
         ];
 
+        $scope.citiesTaxRate = [
+            new CityTaxRate({
+                name:  'Allston',
+                residentialTaxRate: 11.00,
+                residentialExemption: 'Yes',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Arlington',
+                residentialTaxRate: 12.80,
+                residentialExemption: 'No',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Back Bay',
+                residentialTaxRate: 11.00,
+                residentialExemption: 'Yes',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Belmont',
+                residentialTaxRate: 12.56,
+                residentialExemption: 'No',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Brighton',
+                residentialTaxRate: 11.00,
+                residentialExemption: 'Yes',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Brooline',
+                residentialTaxRate: 10.42,
+                residentialExemption: 'Yes',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Cambridge',
+                residentialTaxRate: 6.99,
+                residentialExemption: 'Yes',
+                exemptionValue: 277937,
+                exemptionTax: 1942.78
+            }),
+            new CityTaxRate({
+                name:  'Lexington',
+                residentialTaxRate: 14.60,
+                residentialExemption: 'No',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Malden',
+                residentialTaxRate: 15.16,
+                residentialExemption: 'Yes',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Medford',
+                residentialTaxRate: 11.19,
+                residentialExemption: 'No',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Newton',
+                residentialTaxRate: 11.38,
+                residentialExemption: 'No',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Somerville',
+                residentialTaxRate: 12.53,
+                residentialExemption: 'Yes',
+                exemptionValue: null,
+                exemptionTax: null
+            }),
+            new CityTaxRate({
+                name:  'Waltham',
+                residentialTaxRate: 12.24,
+                residentialExemption: 'Yes',
+                exemptionValue: 88722,
+                exemptionTax: 1085.96
+            })
+        ]
 
     }]);
