@@ -3,7 +3,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
         'use strict';
 
 
-        
+
         $urlRouterProvider
             .when('', '/')
             .otherwise('/404');
@@ -49,10 +49,10 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                     },
                     templateUrl: '/views/home/main.html',
                     onEnter: [function() {
-                        
+
                     }]
                 })
-            
+
             /* --------------------------------------------------------- */
             /*  MARKETING
             /* --------------------------------------------------------- */
@@ -76,10 +76,42 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                     url: '/service',
                     templateUrl: '/views/marketing/service.html',
                     onEnter: [function() {
-                        
+
                     }]
                 })
 
+                    // --------------------------------------------------------- //
+                    //  MARKETING - SERVICE - RETAIL
+                    // --------------------------------------------------------- //
+                    .state('marketing.retail', {
+                        url: '/retail',
+                        templateUrl: '/views/marketing/retail.html',
+                        onEnter: [function() {
+
+                        }]
+                    })
+
+                    // --------------------------------------------------------- //
+                    //  MARKETING - SERVICE - COMMERCIAL
+                    // --------------------------------------------------------- //
+                    .state('marketing.commercial', {
+                        url: '/commercial',
+                        templateUrl: '/views/marketing/commercial.html',
+                        onEnter: [function() {
+
+                        }]
+                    })
+
+                    // --------------------------------------------------------- //
+                    //  MARKETING - SERVICE - COMMERCIAL
+                    // --------------------------------------------------------- //
+                    .state('marketing.eb-5', {
+                        url: '/eb-5',
+                        templateUrl: '/views/marketing/eb-5.html',
+                        onEnter: [function() {
+
+                        }]
+                    })
 
                 // --------------------------------------------------------- //
                 //  MARKETING - TEAM
@@ -89,7 +121,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                     controller: 'TeamCtrl',
                     templateUrl: '/views/marketing/team.html',
                     onEnter: [function() {
-                        
+
                     }]
                 })
 
@@ -100,19 +132,31 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                     url: '/careers',
                     templateUrl: '/views/marketing/careers.html',
                     onEnter: [function() {
-                        
+
                     }]
                 })
 
                 // --------------------------------------------------------- //
-                //  MARKETING - PARTNERS
+                //  MARKETING - RESOURCES
                 // --------------------------------------------------------- //
-                .state('marketing.partners', {
-                    url: '/partners',
-                    templateUrl: '/views/marketing/partners.html',
+                .state('marketing.resources', {
+                    url: '/resources',
+                    controller: 'ResourcesCtrl',
+                    templateUrl: '/views/marketing/resources.html',
                     onEnter: [function() {
-                        
+
                     }]
-                })   
+                })
+
+                // --------------------------------------------------------- //
+                //  MARKETING - CONTACT
+                // --------------------------------------------------------- //
+                .state('marketing.contact', {
+                    url: '/contact',
+                    templateUrl: '/views/marketing/contact.html',
+                    onEnter: [function() {
+
+                    }]
+                })
             ;
     }]);

@@ -50,6 +50,7 @@ h5,
 h6 {
   font-weight: 300;
   letter-spacing: 0.4px;
+  line-height: 26px;
 }
 h1.display-inline,
 h2.display-inline,
@@ -214,7 +215,6 @@ a {
 }
 a:hover,
 a:active {
-  color: #394349;
   cursor: pointer;
   text-decoration: none;
 }
@@ -223,6 +223,13 @@ a.nav-link-button:active {
   background-color: transparent;
   color: white;
 }
+a.service-link {
+  color: #4875B4;
+}
+a.service-link:hover,
+a.service-link:active {
+  color: #d72027;
+}
 a.linkedin-link {
   color: #4875B4;
 }
@@ -230,7 +237,7 @@ a.email-link {
   color: #C63D2D;
 }
 a.contact-link {
-  color: #394349;
+  color: black;
 }
 a.contact-link:hover,
 a.contact-link:active {
@@ -238,7 +245,6 @@ a.contact-link:active {
   text-decoration: none;
 }
 a.language-select-link-navbar {
-  color: #394349;
   cursor: pointer;
 }
 a.selected-language-navbar {
@@ -303,7 +309,6 @@ a.language-select-link-navbar-marketing:active {
 }
 .section .section-header {
   font-size: 30px;
-  color: #394349;
   margin-top: 20px;
   margin-bottom: 10px;
   text-decoration: underline;
@@ -501,6 +506,12 @@ form.navbar-languaage-select {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+.table tr th {
+  text-align: center;
+}
+.table tr td {
+  text-align: center;
+}
 html,
 body {
   height: 100%;
@@ -556,7 +567,6 @@ body .mainpage {
 #navbar-home .nav-link:hover,
 #navbar-home .nav-link:active {
   background-color: transparent;
-  color: #394349;
 }
 .map-container {
   height: 400px;

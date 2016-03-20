@@ -11,7 +11,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     letter-spacing: 0.4px;
-
+    line-height: 26px;
     &.display-inline {
         display: inline-block;
     }
@@ -87,7 +87,7 @@ a {
 
     &:hover,
     &:active {
-        color: @brand-navy;
+        //color: @brand-navy;
         cursor: pointer;
         text-decoration: none;
     }
@@ -100,6 +100,14 @@ a {
         }
     }
 
+    &.service-link {
+        color: #4875B4;
+            &:hover,
+            &:active {
+                color: @brand-red;
+            }
+    }
+
     &.linkedin-link {
         color: #4875B4;
     }
@@ -107,7 +115,7 @@ a {
         color: #C63D2D;
     }
     &.contact-link {
-        color: @brand-navy;
+        color: black;
 
         &:hover,
         &:active {
@@ -117,7 +125,7 @@ a {
     }
 
     &.language-select-link-navbar{
-        color:@brand-navy;
+        //color:@brand-navy;
         cursor: pointer;
     }
 
@@ -202,7 +210,7 @@ a {
 
     .section-header {
         font-size: 30px;
-        color: @brand-navy;
+        //color: @brand-navy;
         margin-top: 20px;
         margin-bottom: 10px;
         text-decoration: underline;
@@ -453,7 +461,7 @@ a {
 }
 
 .text-navy {
-    color: @brand-navy; 
+    color: @brand-navy;
 }
 
 .text-white {
@@ -473,4 +481,18 @@ form {
         padding-bottom: 15px;
         padding-top: 15px;
     }
+}
+
+// ----------------------------------------------------- //
+//  TABLE
+// ----------------------------------------------------- //
+.table {
+  tr{
+    th {
+      text-align: center;
+    }
+    td {
+      text-align: center;
+    }
+  }
 }
