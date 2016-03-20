@@ -269,5 +269,7 @@
     "EXEMPTION_PARAGRAPH_3": "The value of the exemption is subtracted from the total full valuation. For example, the fiscal year residential exemption is 30% of the average value of all residential property in Boston.",
     "EXEMPTION_SUBPOINT_1": "Different cities may base on different percentages of the average value of all residential property in the city.",
     "EXEMPTION_SUBPOINT_2": "The filing deadline varies, depending on different city’s requirements.",
-    "TAX_EXEMPTION_SUBNOTE": "The owner has to pay at least 10% of the assessment value’s tax except for certain persons with physical infirmities and financial hardship."
+    "TAX_EXEMPTION_SUBNOTE": "The owner has to pay at least 10% of the assessment value’s tax except for certain persons with physical infirmities and financial hardship.",
+    "FOR_MORE_INFO": "For more information",
+    "CLICK_HERE": "Click here"
 }

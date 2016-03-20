@@ -83,32 +83,34 @@
         <div class="extra-padding-sm">
             <div class="row extra-padding-top-md">
                 <div class="col-md-10 col-md-offset-1">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                        <tr>
-                            <th><h5><strong>{{"DISTRICT" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"RANK" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"ENROLLMENT" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"AVG_CLASS_SIZE" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"STUDENT_TEACHER_RATIO" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"TUITION" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"GRADUATION" | translate}}</strong></h5></th>
-                            <th><h5><strong>{{"ATTENDING_COLLEGE_RATE" | translate}}</strong></h5></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="school in schools">
-                            <td><h5>{{school.district}}</h5></td>
-                            <td><h5>{{school.rank}}</h5></td>
-                            <td><h5>{{school.enrollment}}</h5></td>
-                            <td><h5>{{school.classSize}}</h5></td>
-                            <td><h5>{{school.studentTeacherRatio}}</h5></td>
-                            <td><h5>{{school.perPupilSpending}}</h5></td>
-                            <td><h5>{{school.graduationRatio}}</h5></td>
-                            <td><h5>{{school.attendingCollegeRatio}}</h5></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th><h5><strong>{{"DISTRICT" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"RANK" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"ENROLLMENT" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"AVG_CLASS_SIZE" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"STUDENT_TEACHER_RATIO" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"TUITION" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"GRADUATION" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"ATTENDING_COLLEGE_RATE" | translate}}</strong></h5></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="school in schools">
+                                <td><h5>{{school.district}}</h5></td>
+                                <td><h5>{{school.rank}}</h5></td>
+                                <td><h5>{{school.enrollment}}</h5></td>
+                                <td><h5>{{school.classSize}}</h5></td>
+                                <td><h5>{{school.studentTeacherRatio}}</h5></td>
+                                <td><h5>{{school.perPupilSpending}}</h5></td>
+                                <td><h5>{{school.graduationRatio}}</h5></td>
+                                <td><h5>{{school.attendingCollegeRatio}}</h5></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <h4>{{"FOR_MORE_INFO" | translate}} <a class="service-link" href="http://www.bostonmagazine.com/best-schools-boston-2015-chart/">{{"CLICK_HERE" | translate}}</a></h4>
                 </div>
             </div>
