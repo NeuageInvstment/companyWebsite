@@ -41,11 +41,11 @@
                         <table class="table table-bordered table-condensed table-striped">
                             <thead>
                                 <tr>
-                                    <th><h5><strong>City</strong></h5></th>
-                                    <th><h5><strong>Residential Tax Rate</strong></h5></th>
-                                    <th><h5><strong>Residential Exemption</strong></h5></th>
-                                    <th><h5><strong>Exemption Value(2016)</strong></h5></th>
-                                    <th><h5><strong>Exemption Tax(2016)</strong></h5></th>
+                                    <th><h5><strong><h5><strong>City</strong></h5></th>
+                                    <th><h5><strong><h5><strong>Residential Tax Rate</strong></h5></th>
+                                    <th><h5><strong><h5><strong>Residential Exemption</strong></h5></th>
+                                    <th><h5><strong><h5><strong>Exemption Value(2016)</strong></h5></th>
+                                    <th><h5><strong><h5><strong>Exemption Tax(2016)</strong></h5></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -59,6 +59,43 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-padded-sm">
+    <div class="container">
+        <h3 class="section-header">{{"PUBLIC_SCHOOL_RANKING" | translate}}</h3>
+        <div class="extra-padding-sm">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th><h5><strong>District</strong></h5></th>
+                            <th><h5><strong>Rank</strong></h5></th>
+                            <th><h5><strong>Enrollment</strong></h5></th>
+                            <th><h5><strong>Avg. Class Size</strong></h5></th>
+                            <th><h5><strong>Student-to-Teacher Ratio</strong></h5></th>
+                            <th><h5><strong>Per-Pupil Spending</strong></h5></th>
+                            <th><h5><strong>Graduation Ration(%)</strong></h5></th>
+                            <th><h5><strong>Attending College(%)</strong></h5></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="school in schools">
+                            <td><h5>{{school.district}}</h5></td>
+                            <td><h5>{{school.rank}}</h5></td>
+                            <td><h5>{{school.enrollment}}</h5></td>
+                            <td><h5>{{school.classSize}}</h5></td>
+                            <td><h5>{{school.studentTeacherRatio}}</h5></td>
+                            <td><h5>{{school.perPupilSpending}}</h5></td>
+                            <td><h5>{{school.graduationRatio}}</h5></td>
+                            <td><h5>{{school.attendingCollegeRatio}}</h5></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

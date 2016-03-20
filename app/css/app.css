@@ -215,7 +215,6 @@ a {
 }
 a:hover,
 a:active {
-  color: #394349;
   cursor: pointer;
   text-decoration: none;
 }
@@ -238,7 +237,7 @@ a.email-link {
   color: #C63D2D;
 }
 a.contact-link {
-  color: #394349;
+  color: black;
 }
 a.contact-link:hover,
 a.contact-link:active {
@@ -246,7 +245,6 @@ a.contact-link:active {
   text-decoration: none;
 }
 a.language-select-link-navbar {
-  color: #394349;
   cursor: pointer;
 }
 a.selected-language-navbar {
@@ -311,7 +309,6 @@ a.language-select-link-navbar-marketing:active {
 }
 .section .section-header {
   font-size: 30px;
-  color: #394349;
   margin-top: 20px;
   margin-bottom: 10px;
   text-decoration: underline;
@@ -570,7 +567,6 @@ body .mainpage {
 #navbar-home .nav-link:hover,
 #navbar-home .nav-link:active {
   background-color: transparent;
-  color: #394349;
 }
 .map-container {
   height: 400px;
