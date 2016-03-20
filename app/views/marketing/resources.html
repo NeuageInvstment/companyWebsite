@@ -6,13 +6,13 @@
                 <dic class="table-responsive">
                     <table class="table table-bordered table-condensed table-striped ">
                         <thead>
-                            <th COLSPAN="5">Market Overview</th>
+                            <th COLSPAN="5">{{"MARKET_OVERVIEW" | translate}}</th>
                             <tr>
-                                <th><h5><strong>City</strong></h5></th>
-                                <th><h5><strong>Home Value Index</strong></h5></th>
-                                <th><h5><strong>1-Year Change</strong></h5></th>
-                                <th><h5><strong>1-Year Forecast</strong></h5></th>
-                                <th><h5><strong>Index (Per Month)</strong></h5></th>
+                                <th><h5><strong>{{"CITY" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"HOME_VAL_INDEX" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"ONE_YEAR_CHANGE" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"ONE_YEAR_FORCAST" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"RENT_INDEX" | translate}}</strong></h5></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -34,6 +34,7 @@
     <div class="container">
         <h3 class="section-header">{{"TAX_RESIDENTIAL_EXCEPTION" | translate}}</h3>
         <div class="extra-padding-sm">
+
             <h4>{{"TAX_Rate_2016" | translate}}</h4>
             <div class="row extra-padding-top-md">
                 <div class="col-md-10 col-md-offset-1">
@@ -41,11 +42,11 @@
                         <table class="table table-bordered table-condensed table-striped">
                             <thead>
                                 <tr>
-                                    <th><h5><strong><h5><strong>City</strong></h5></th>
-                                    <th><h5><strong><h5><strong>Residential Tax Rate</strong></h5></th>
-                                    <th><h5><strong><h5><strong>Residential Exemption</strong></h5></th>
-                                    <th><h5><strong><h5><strong>Exemption Value(2016)</strong></h5></th>
-                                    <th><h5><strong><h5><strong>Exemption Tax(2016)</strong></h5></th>
+                                    <th><h5><strong><h5><strong>{{"CITY" | translate}}</strong></h5></th>
+                                    <th><h5><strong><h5><strong>{{"RESIDENTIAL_TAX_RATE" | translate}}</strong></h5></th>
+                                    <th><h5><strong><h5><strong>{{"RESIDENTIAL_EXEMPTION" | translate}}</strong></h5></th>
+                                    <th><h5><strong><h5><strong>{{"EXEMPTION_VALUE" | translate}}</strong></h5></th>
+                                    <th><h5><strong><h5><strong>{{"EXEMPTION_TAX" | translate}}</strong></h5></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -58,6 +59,18 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <h5>*{{"TAX_EXEMPTION_SUBNOTE" | translate}}</h5>
+                        <h4>{{"FOR_MORE_INFO" | translate}} <a class="service-link" href="http://www.cityofboston.gov/assessing/exemptions/resexempt.asp">{{"CLICK_HERE" | translate}}</a></h4>
+                        <div class="extra-padding-sm">
+                            <h3>{{"WHAT_IS_TAX_EXEMPTION" | translate}}</h3>
+                            <div class="extra-padding-xs">
+                                <h4>{{"EXEMPTION_PARAGRAPH_1" | translate}}</h4>
+                                <h4>{{"EXEMPTION_PARAGRAPH_2" | translate}}</h4>
+                                <h4>{{"EXEMPTION_PARAGRAPH_3" | translate}}</h4>
+                                <h4>*{{"EXEMPTION_SUBPOINT_1" | translate}}</h4>
+                                <h4>*{{"EXEMPTION_SUBPOINT_2" | translate}}</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,34 +81,37 @@
     <div class="container">
         <h3 class="section-header">{{"PUBLIC_SCHOOL_RANKING" | translate}}</h3>
         <div class="extra-padding-sm">
-            <div class="row">
+            <div class="row extra-padding-top-md">
                 <div class="col-md-10 col-md-offset-1">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                        <tr>
-                            <th><h5><strong>District</strong></h5></th>
-                            <th><h5><strong>Rank</strong></h5></th>
-                            <th><h5><strong>Enrollment</strong></h5></th>
-                            <th><h5><strong>Avg. Class Size</strong></h5></th>
-                            <th><h5><strong>Student-to-Teacher Ratio</strong></h5></th>
-                            <th><h5><strong>Per-Pupil Spending</strong></h5></th>
-                            <th><h5><strong>Graduation Ration(%)</strong></h5></th>
-                            <th><h5><strong>Attending College(%)</strong></h5></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="school in schools">
-                            <td><h5>{{school.district}}</h5></td>
-                            <td><h5>{{school.rank}}</h5></td>
-                            <td><h5>{{school.enrollment}}</h5></td>
-                            <td><h5>{{school.classSize}}</h5></td>
-                            <td><h5>{{school.studentTeacherRatio}}</h5></td>
-                            <td><h5>{{school.perPupilSpending}}</h5></td>
-                            <td><h5>{{school.graduationRatio}}</h5></td>
-                            <td><h5>{{school.attendingCollegeRatio}}</h5></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th><h5><strong>{{"DISTRICT" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"RANK" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"ENROLLMENT" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"AVG_CLASS_SIZE" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"STUDENT_TEACHER_RATIO" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"TUITION" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"GRADUATION" | translate}}</strong></h5></th>
+                                <th><h5><strong>{{"ATTENDING_COLLEGE_RATE" | translate}}</strong></h5></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="school in schools">
+                                <td><h5>{{school.district}}</h5></td>
+                                <td><h5>{{school.rank}}</h5></td>
+                                <td><h5>{{school.enrollment}}</h5></td>
+                                <td><h5>{{school.classSize}}</h5></td>
+                                <td><h5>{{school.studentTeacherRatio}}</h5></td>
+                                <td><h5>{{school.perPupilSpending}}</h5></td>
+                                <td><h5>{{school.graduationRatio}}</h5></td>
+                                <td><h5>{{school.attendingCollegeRatio}}</h5></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h4>{{"FOR_MORE_INFO" | translate}} <a class="service-link" href="http://www.bostonmagazine.com/best-schools-boston-2015-chart/">{{"CLICK_HERE" | translate}}</a></h4>
                 </div>
             </div>
         </div>
