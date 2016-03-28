@@ -271,5 +271,8 @@
     "EXEMPTION_SUBPOINT_2": "The filing deadline varies, depending on different city’s requirements.",
     "TAX_EXEMPTION_SUBNOTE": "The owner has to pay at least 10% of the assessment value’s tax except for certain persons with physical infirmities and financial hardship.",
     "FOR_MORE_INFO": "For more information",
-    "CLICK_HERE": "Click here"
+    "CLICK_HERE": "Click here",
+    "NAME": "Name",
+    "EMAIL": "E-mal",
+    "MESSAGE": "Message"
 }

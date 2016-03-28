@@ -1,5 +1,5 @@
 {
-    "name": "nuage-investment",
+    "name": "nuageInvestment",
     "version": "",
     "devDependencies": {
         "grunt": "~0.4.1",

@@ -261,5 +261,8 @@
     "EXEMPTION_SUBPOINT_2": "所要求的申请截止日期可能因城市而异。",
     "FOR_MORE_INFO": "更多信息",
     "CLICK_HERE": "按这里",
-    "TAX_EXEMPTION_SUBNOTE": "房主需要支付至少房产估值税额的10%，只有某些法律规定的特殊人群可以全部豁免。"
+    "TAX_EXEMPTION_SUBNOTE": "房主需要支付至少房产估值税额的10%，只有某些法律规定的特殊人群可以全部豁免。",
+    "NAME": "姓名",
+    "EMAIL": "电邮地址",
+    "MESSAGE": "信息"
 }

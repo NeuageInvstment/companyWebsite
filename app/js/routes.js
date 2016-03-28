@@ -153,6 +153,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 // --------------------------------------------------------- //
                 .state('marketing.contact', {
                     url: '/contact',
+                    controller: 'ContactCtrl',
                     templateUrl: '/views/marketing/contact.html',
                     onEnter: [function() {
 
