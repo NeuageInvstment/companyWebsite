@@ -42,6 +42,9 @@
 .display-inline {
   display: inline-block;
 }
+.display-block {
+  display: block;
+}
 h1,
 h2,
 h3,
@@ -577,4 +580,27 @@ body .mainpage {
   height: 100%;
   width: 100%;
   border: 0;
+}
+#mobile-navbar {
+  background-color: #355c74;
+}
+#mobile-navbar button .icon-bar {
+  background-color: white;
+}
+#mobile-navbar .mobile-navbar-canvas {
+  background: #355c74 !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#mobile-navbar .mobile-navbar-canvas li {
+  border-bottom: 1px solid #ccc;
+}
+#mobile-navbar .mobile-navbar-canvas li a {
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: white;
+}
+#mobile-navbar .mobile-navbar-canvas li a:hover,
+#mobile-navbar .mobile-navbar-canvas li a:active {
+  background-color: #355c74;
 }

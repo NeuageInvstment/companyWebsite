@@ -1,60 +1,108 @@
 <nav class="navbar navbar-primary remove-bottom-margin navbar-fixed-top hidden-sm hidden-xs">
-  <div class="container extra-padding-md">
+    <div class="container extra-padding-md">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nuage-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Nuage</a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nuage-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Nuage</a>
+        </div>
+        <form class="navbar-form navbar-left navbar-languaage-select" role="serach">
+            <a class="language-select-link-navbar-marketing" ng-class="{'selected-language-navbar' : selectedLanguage('en_US')}" ng-click="translate('en_US')">EN</a>
+            <p class="text-white display-inline remove-all-margin">/</p>
+            <a class="language-select-link-navbar-marketing" ng-class="{'selected-language-navbar' : selectedLanguage('cn-simplified')}" ng-click="translate('cn-simplified')">中文</a>
+        </form>
+        <div class="collapse navbar-collapse" id="nuage-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li data-match-route="/home">
+                    <a class="nav-link" ui-sref="home.main">
+                        {{"HOME" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.service">
+                    <a class="nav-link" ui-sref="marketing.service">
+                        {{"SERVICE" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.team">
+                    <a class="nav-link" ui-sref="marketing.team">
+                        {{"TEAM" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.careers">
+                    <a class="nav-link" ui-sref="marketing.careers">
+                        {{"CAREERS" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.resources">
+                    <a class="nav-link" ui-sref="marketing.resources">
+                        {{"RESOURCES" | translate}}
+                    </a>
+                </li>
+                  <li data-match-route="/marketing.contact">
+                      <a class="nav-link" ui-sref="marketing.contact">
+                          {{"CONTACT" | translate}}
+                      </a>
+                  </li>
+                <li>
+                    <md-button class="md-raised md-primary pull-right">
+                        <a class="nav-link-button" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">{{"PROPERTY_SEARCH" | translate}}</a>
+                    </md-button>
+                </li>
+            </ul>
+        </div>
     </div>
-    <form class="navbar-form navbar-left navbar-languaage-select" role="serach">
-        <a class="language-select-link-navbar-marketing" ng-class="{'selected-language-navbar' : selectedLanguage('en_US')}" ng-click="translate('en_US')">EN</a>
-        <p class="text-white display-inline remove-all-margin">/</p>
-        <a class="language-select-link-navbar-marketing" ng-class="{'selected-language-navbar' : selectedLanguage('cn-simplified')}" ng-click="translate('cn-simplified')">中文</a>
-    </form>
-    <div class="collapse navbar-collapse" id="nuage-navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li data-match-route="/home">
-            <a class="nav-link" ui-sref="home.main">
-                {{"HOME" | translate}}
-            </a>
-        </li>
-        <li data-match-route="/marketing.service">
-            <a class="nav-link" ui-sref="marketing.service">
-                {{"SERVICE" | translate}}
-            </a>
-        </li>
-        <li data-match-route="/marketing.team">
-            <a class="nav-link" ui-sref="marketing.team">
-                {{"TEAM" | translate}}
-            </a>
-        </li>
-        <li data-match-route="/marketing.careers">
-            <a class="nav-link" ui-sref="marketing.careers">
-                {{"CAREERS" | translate}}
-            </a>
-        </li>
-        <li data-match-route="/marketing.resources">
-            <a class="nav-link" ui-sref="marketing.resources">
-                {{"RESOURCES" | translate}}
-            </a>
-        </li>
-          <li data-match-route="/marketing.contact">
-              <a class="nav-link" ui-sref="marketing.contact">
-                  {{"CONTACT" | translate}}
-              </a>
-          </li>
-        <li>
-            <md-button class="md-raised md-primary pull-right">
-                <a class="nav-link-button" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">{{"PROPERTY_SEARCH" | translate}}</a>
-            </md-button>
-        </li>
-      </ul>
-    </div>
-  </div>
 </nav>
-<div style="padding-top: 70px;" ui-view></div>
+<nav class="navbar navbar-default visible-xs navbar-fixed-top" id="mobile-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header" >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse mobile-navbar-canvas" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills nav-justified">
+                <li data-match-route="/home">
+                    <a class="nav-link" ui-sref="home.main">
+                        {{"HOME" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.service">
+                    <a class="nav-link" ui-sref="marketing.service">
+                        {{"SERVICE" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.team">
+                    <a class="nav-link" ui-sref="marketing.team">
+                        {{"TEAM" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.careers">
+                    <a class="nav-link" ui-sref="marketing.careers">
+                        {{"CAREERS" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.resources">
+                    <a class="nav-link" ui-sref="marketing.resources">
+                        {{"RESOURCES" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.contact">
+                    <a class="nav-link" ui-sref="marketing.contact">
+                        {{"CONTACT" | translate}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="padding-top: 70px;" ui-view class="hidden-xs hidden-sm"></div>
+<div style="padding-top: 50px;" ui-view class="visible-xs visible-sm"></div>
 <div ng-include="'/views/partials/footer.html'"></div>

@@ -17,7 +17,7 @@ var app = angular.module('nuageInvestment', [
             suffix: '.json'
         });
 
-        $translateProvider.preferredLanguage('en_US');
+        $translateProvider.preferredLanguage('cn-simplified');
         $translateProvider.useSanitizeValueStrategy(null);
     }])
 
