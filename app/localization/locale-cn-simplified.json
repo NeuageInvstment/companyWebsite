@@ -264,5 +264,7 @@
     "TAX_EXEMPTION_SUBNOTE": "房主需要支付至少房产估值税额的10%，只有某些法律规定的特殊人群可以全部豁免。",
     "NAME": "姓名",
     "EMAIL": "电邮地址",
-    "MESSAGE": "信息"
+    "MESSAGE": "信息",
+    "MORE_NAV": "更多",
+    "OUR_SERVICE": "我们的服务"
 }

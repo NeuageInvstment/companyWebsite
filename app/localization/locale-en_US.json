@@ -1,6 +1,6 @@
 {
     "HOME" : "Home",
-    "SERVICE" : "Service",
+    "SERVICE" : "Services",
     "TEAM" : "Team",
     "CAREERS": "Careers",
     "CONTACT": "Contact Us",
@@ -274,5 +274,7 @@
     "CLICK_HERE": "Click here",
     "NAME": "Name",
     "EMAIL": "E-mal",
-    "MESSAGE": "Message"
+    "MESSAGE": "Message",
+    "MORE_NAV": "More",
+    "OUR_SERVICE": "Our Services"
 }

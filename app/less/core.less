@@ -7,6 +7,17 @@
 .display-block {
     display: block;
 }
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: calc(100% - 92px);
+
+    &.table-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
 // ----------------------------------------------------- //
 //  HEADINGS
 // ----------------------------------------------------- //
@@ -95,7 +106,7 @@ a {
         cursor: pointer;
         text-decoration: none;
     }
-    
+
     &.nav-link-button {
         &:hover,
         &:active {
@@ -115,9 +126,11 @@ a {
     &.linkedin-link {
         color: #4875B4;
     }
+
     &.email-link {
         color: #C63D2D;
     }
+
     &.contact-link {
         color: black;
 
@@ -129,7 +142,6 @@ a {
     }
 
     &.language-select-link-navbar{
-        //color:@brand-navy;
         cursor: pointer;
     }
 
@@ -137,6 +149,11 @@ a {
         color: @brand-red !important;
         border-bottom: solid 1px @brand-red;
         padding-bottom: 2px;
+    }
+
+    &.selected-language-navbar-mobile{
+        color: @brand-navy !important;
+        background-color: white;
     }
 
     &.language-select-link-navbar-marketing {
@@ -162,7 +179,7 @@ a {
     &.section-light-gray {
         background-color: #F0F0EA;
     }
-    
+
     &.section-navy {
         background-color: @brand-navy;
     }
@@ -200,21 +217,34 @@ a {
         text-align: center;
     }
 
-    &.section-image {
+    &.section-hero {
+        background-image: url('/images/boston-hero.jpg');
+        background-position: 50% 50%;
+        min-height: 80%;
+        width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;
     }
 
-    &.section-hero {
+
+    &.section-hero-mobile {
+        height: 80%;
+        width: 100%;
+        display: table;
         background-image: url('/images/boston-hero.jpg');
         background-position: 50% 50%;
-        min-height: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .section-hero-mobile-contain {
+            display: table-cell;
+            vertical-align: middle;
+        }
     }
 
     .section-header {
         font-size: 30px;
-        //color: @brand-navy;
         margin-top: 20px;
         margin-bottom: 10px;
         text-decoration: underline;
@@ -228,6 +258,8 @@ a {
     .sub-section-info-wrapper {
         margin-bottom: 20px;
     }
+
+
 }
 
 // ----------------------------------------------------- //
@@ -461,7 +493,7 @@ a {
 //  TEXT
 // ----------------------------------------------------- //
 .text-red {
-    color: @brand-red 
+    color: @brand-red
 }
 
 .text-navy {

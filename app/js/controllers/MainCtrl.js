@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('MainCtrl', ['$scope', '$http', 'LanguageDataService',
-    function($scope,$http, LanguageDataService) {
+angular.module('nuageInvestment').controller('MainCtrl', ['$scope', '$http', '$translate', 'LanguageDataService',
+    function($scope, $http, $translate, LanguageDataService) {
         'use strict';
 
         $scope.scroll = 0; 
@@ -11,5 +11,8 @@ angular.module('nuageInvestment').controller('MainCtrl', ['$scope', '$http', 'La
             return LanguageDataService.getSelectedLanguage() === key;
         };
 
+        $scope.isLanguageSelected = function(language) {
+            return $translate.use() === language;
+        };
 
     }]);

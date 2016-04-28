@@ -18,6 +18,7 @@ body {
         -webkit-appearance: none;
     }
 
+
     &.nav-fixed-top {
         padding-top: 51px;
     }
@@ -103,8 +104,22 @@ body {
     background-color: @brand-navy;
 
     button {
+        border-color: transparent;
+        &:hover,
+        &:active {
+            background-color: transparent;
+        }
         .icon-bar {
             background-color: white;
+        }
+    }
+
+    .navbar-toggle {
+        border-color: transparent;
+
+        &:hover,
+        &:active {
+            background-color : transparent;
         }
     }
     .mobile-navbar-canvas {

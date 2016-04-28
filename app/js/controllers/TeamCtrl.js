@@ -1,14 +1,20 @@
-angular.module('nuageInvestment').controller('TeamCtrl', ['$scope', 'EmployeeModel','EmployeeDataService',
-    function($scope, Employee, EmployeeDataService) {
+angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope', '$state', 'EmployeeModel','EmployeeDataService',
+    function($rootScope, $scope, $state, Employee, EmployeeDataService) {
         'use strict';
 
-        $scope.bostonEmployees = EmployeeDataService.getEmployeeCollectionByLocation('Boston');
-        $scope.newYorkEmployees = EmployeeDataService.getEmployeeCollectionByLocation('New York');
-        $scope.connecticutEmployees = EmployeeDataService.getEmployeeCollectionByLocation('Connecticut');
-        $scope.overSeaEmployees = EmployeeDataService.getEmployeeCollectionByLocation('China');
+        var getEmployees = function() {
+            $scope.bostonEmployees = EmployeeDataService.getEmployeeCollectionByLocation('Boston', $rootScope.selectLanguage);
+            $scope.newYorkEmployees = EmployeeDataService.getEmployeeCollectionByLocation('New York', $rootScope.selectLanguage);
+            $scope.connecticutEmployees = EmployeeDataService.getEmployeeCollectionByLocation('Connecticut', $rootScope.selectLanguage);
+            $scope.overSeaEmployees = EmployeeDataService.getEmployeeCollectionByLocation('China', $rootScope.selectLanguage);
+        };
 
-        $scope.getEmployeeInfoById = function(id) {
-            return EmployeeDataService.getEmployeeById(id);
-        }
+        getEmployees();
+
+        $scope.$watch('selectLanguage', function(newValue, oldValue){
+            if(newValue !== oldValue) {
+                getEmployees();
+            }
+        })
 
     }]);
