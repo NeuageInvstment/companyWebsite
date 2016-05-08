@@ -28,7 +28,7 @@ angular.module('nuageInvestment').controller('ContactCtrl', ['$scope', 'ContactD
                     });
                 });
 
-        }
+        };
 
 
     }]);

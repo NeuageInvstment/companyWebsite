@@ -49,7 +49,10 @@ module.exports = function(grunt) {
                     dest: 'dist/',
                     src: [
                         'index.html',
-                        'img/**'
+                        'fonts/**',
+                        'images/**',
+                        'views/**',
+                        'localization/**'
                     ]
                 }]
             }
@@ -134,7 +137,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['app/css/**/*.css'],
-                tasks: []
+                tasks: ['csslint']
             },
             less: {
                 files : ['app/less/**/*.less'],
@@ -152,6 +155,14 @@ module.exports = function(grunt) {
                 }
             }
         },
+        csslint: {
+            options: {
+                csslintrc: '.csslintrc'
+            },
+            all : {
+                src : ['app/css/**/*.css']
+            }
+        },
         less: {
             options: {
                 paths: ['app/less']
@@ -162,12 +173,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        rev: {
+            dist: {
+                files: {
+                    src: [
+                        'dist/js/{,*/}*.js',
+                        'dist/css/{,*/}*.css'
+                    ]
+                }
+            }
+        },
         imagemin: {
             dist : {
                 options : {
                     optimizationLevel: 7,
-                        progressive: false,
-                        interlaced : true
+                    progressive: false,
+                    interlaced : true
                 },
                 files: [{
                     expand: true,
@@ -175,30 +196,6 @@ module.exports = function(grunt) {
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'dist/'
                 }]
-            }
-        },
-        karma: {
-            dev_unit: {
-                options: {
-                    configFile: 'test/conf/unit-test-conf.js',
-                    background: true,
-                    singleRun: false,
-                    autoWatch: true,
-                    reporters: ['progress']
-                }
-            },
-            dist_unit: {
-                options: {
-                    configFile: 'test/conf/unit-test-conf.js',
-                    background: false,
-                    singleRun: true,
-                    autoWatch: false,
-                    reporters: ['progress', 'coverage'],
-                    coverageReporter : {
-                        type : 'html',
-                        dir : '../reports/coverage'
-                    }
-                }
             }
         }
     });
@@ -215,6 +212,7 @@ module.exports = function(grunt) {
         'uglify',
         'less',
         'cssmin',
+        'rev',
         'imagemin',
         'usemin',
         'htmlmin'
@@ -225,7 +223,6 @@ module.exports = function(grunt) {
         'less',
         _selectedEnvironment,
         'browserSync',
-        'karma:dev_unit:start',
         'watch'
     ]);
 

@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').factory('APIRepository', ['$q', '$http', 'ResponseModel', 'DEBUG_MODE',
-    function ($q, $http, Response, DEBUG_MODE) {
+angular.module('nuageInvestment').factory('APIRepository', ['$q', '$http', '$log', 'ResponseModel', 'DEBUG_MODE',
+    function ($q, $http, $log, Response, DEBUG_MODE) {
 
         var _getHeadersFromResponse = function(response) {
             var headers = response.headers();

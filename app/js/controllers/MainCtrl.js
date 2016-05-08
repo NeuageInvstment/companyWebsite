@@ -2,7 +2,7 @@ angular.module('nuageInvestment').controller('MainCtrl', ['$scope', '$http', '$t
     function($scope, $http, $translate, LanguageDataService) {
         'use strict';
 
-        $scope.scroll = 0; 
+        $scope.scroll = 0;
         $scope.translate = function(key) {
             LanguageDataService.setLanguage(key);
         };

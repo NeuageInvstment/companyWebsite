@@ -24,5 +24,5 @@ var app = angular.module('nuageInvestment', [
 
     .run(['$rootScope', function($rootScope) {
         'use strict';
-
+        $rootScope.selectLanguage = 'cn-simplified';
     }]);
