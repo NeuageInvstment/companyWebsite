@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('MarketingCtrl', ['$scope', 'LanguageDataService',
-    function($scope, LanguageDataService) {
+angular.module('nuageInvestment').controller('MarketingCtrl', ['$scope', '$translate', 'LanguageDataService',
+    function($scope, $translate, LanguageDataService) {
         'use strict';
 
         $scope.translate = function(key) {
@@ -8,5 +8,9 @@ angular.module('nuageInvestment').controller('MarketingCtrl', ['$scope', 'Langua
 
         $scope.selectedLanguage = function(key) {
             return LanguageDataService.getSelectedLanguage() === key;
+        };
+
+        $scope.isLanguageSelected = function(language) {
+            return $translate.use() === language;
         };
     }]);

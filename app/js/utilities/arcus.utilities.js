@@ -88,7 +88,7 @@ angular.module('arcus.utilities', [])
                         }
                     }
 
-                    if (errors.length != 0 && DEBUG_MODE) {
+                    if (errors.length !== 0 && DEBUG_MODE) {
                         $log.log('==== Model Build Failed: ' + name + ' ====');
                         $log.log(errors);
                         $log.log('==== / Model Build Failed ====');

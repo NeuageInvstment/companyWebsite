@@ -1,14 +1,456 @@
-angular.module('nuageInvestment').controller('TeamCtrl', ['$scope', 'EmployeeModel','EmployeeDataService',
-    function($scope, Employee, EmployeeDataService) {
+angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope', '$state', 'EmployeeModel',
+    function($rootScope, $scope, $state, Employee) {
         'use strict';
 
-        $scope.bostonEmployees = EmployeeDataService.getEmployeeCollectionByLocation('Boston');
-        $scope.newYorkEmployees = EmployeeDataService.getEmployeeCollectionByLocation('New York');
-        $scope.connecticutEmployees = EmployeeDataService.getEmployeeCollectionByLocation('Connecticut');
-        $scope.overSeaEmployees = EmployeeDataService.getEmployeeCollectionByLocation('China');
+        var employeesEn =  [
+            new Employee({
+                fullName : 'Christie Xie',
+                title : 'Managing Principal',
+                email : 'cxie@nuageinvrealty.com',
+                phoneNumber : '1(617)678-3889',
+                location : 'Boston',
+                profileImageURI : './images/employees/cxie.jpg',
+                language : 'English, Chinese (Mandarin)',
+                certificate: 'CFP',
+                wechatId: 'Christie_Xie'
+            }),
+            new Employee({
+                fullName : 'Bin Shen',
+                title : 'Senior Advisor',
+                email : 'bshen@nuageinvrealty.com',
+                phoneNumber : '1(617)817-1782',
+                location : 'Boston',
+                profileImageURI : './images/employees/bshen.jpg',
+                language : 'English, Chinese (Mandarin)',
+                certificate: null,
+                wechateId: 'isen2006'
+            }),
+            new Employee({
+                fullName: 'Jing Mai',
+                title:'Senior Advisor',
+                email: 'jmai@nuageinvrealty.com',
+                phoneNumber: '1(207)458-9749',
+                location: 'Boston',
+                profileImageURI: './images/employees/jmai.jpg',
+                language: 'English, Chinese (Cantonese)',
+                wechatId:'jingrmai',
+                certificate: 'CPA'
+            }),
+            new Employee({
+                fullName : 'Summer Xia',
+                title : 'Advisor',
+                email : 'sxia@nuageinvrealty.com',
+                phoneNumber : '1(617)319-3601',
+                location : 'Boston',
+                profileImageURI : './images/employees/sxia.jpg',
+                language : 'English, Chinese(Mandarin)',
+                wechatId: 'summeronetree',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Wilber Chen',
+                title: 'Advisor',
+                email: 'wchen@nuageinvrealty.com',
+                phoneNumber: '1(857)334-1635',
+                location: 'Boston',
+                profileImageURI: './images/employees/wchen.jpg',
+                language: 'English, Chinese (Mandarin/Taiwanese)',
+                wechatId:'wilburchenus',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Zhou Chen',
+                title:'Advisor',
+                email: 'zchen@nuageinvrealty.com',
+                phoneNumber: '1(781)521-2635',
+                location: 'Boston',
+                profileImageURI: './images/employees/zchen.png',
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'cn1960216387',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Vanessa Truong',
+                title: 'Advisor',
+                email: 'vtruong@nuageinvrealty.com',
+                phoneNumber: '1(508)654-0789',
+                location: 'Boston',
+                profileImageURI: './images/employees/vtruong.jpg',
+                certificate: 'CFP',
+                language: 'English, Chinese (Mandarin/Cantonese), Vietnamese',
+                wechatId: null
+            }),
+            new Employee({
+                fullName: 'Kim Walker',
+                title:'Advisor',
+                email: 'kwalker@nuageinvrealty.com',
+                phoneNumber: '1(617)680-2733',
+                location: 'Boston',
+                profileImageURI: './images/employees/kwalker.jpg',
+                language: 'English',
+                wechatId: null,
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Joe Wang',
+                title:'Advisor',
+                email: 'junlewang@gmail.com',
+                phoneNumber: '1(781)308-0291',
+                location: 'Boston',
+                profileImageURI: './images/employees/jwang.jpg',
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'JoeWang606297'
+            }),
+            new Employee({
+                fullName: 'Emily Ji',
+                title:'Advisor',
+                email: 'xiaocen0731@gmail.com',
+                phoneNumber: '1(517)488-6368',
+                location: 'Boston',
+                profileImageURI: './images/employees/eji.jpg',
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'xiaocen0731',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Ran Cui',
+                title:'Advisor',
+                email: 'rancdo@gmail.com',
+                phoneNumber: '1(508)308-8280',
+                location: 'Boston',
+                profileImageURI: './images/employees/rcui.jpg',
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'Ran_C_0208'
+            }),
+            new Employee({
+                fullName: 'Hannah Quan',
+                title:'Advisor',
+                email: 'hannah.hao.quan@gmail.com',
+                phoneNumber: '1(617)901-9160',
+                location: 'Boston',
+                profileImageURI: './images/employees/hquan.png',
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'Hannah_Quan',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Max Xu',
+                title:'Advisor',
+                email: 'slowsmile820@gmail.com',
+                phoneNumber: '1(617)901-5937',
+                location: 'New York',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'maxxu_ny',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Kate Song',
+                title:'Advisor',
+                email: 'ksong@nuageinvrealty.com',
+                phoneNumber: '1(917)972-1668',
+                location: 'New York',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'youriva',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Jeff Zhou',
+                title:'Advisor',
+                email: 'jeff.zhou@acertallc.com',
+                phoneNumber: '1(860)532-9018',
+                location: 'Connecticut',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'rzredge',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Joey Jiang',
+                title:'Shanghai Representative',
+                email: 'jiangchao1103@hotmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'CJiang1103',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Letian Xia',
+                title:'Shanghai Representative',
+                email: 'letianx@foxmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'letianxia1',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Chun-Kai Wang',
+                title:'Shandong Representative',
+                email: 'phenomenoner@gmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin/Taiwanese)',
+                wechatId:'chunkai1983',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Pibin Teng',
+                title:'Shandong Representative',
+                email: 'pibinteng@gmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: 'English, Chinese (Mandarin)',
+                wechatId:'teng8809',
+                certificate: null
+            })
+        ];
 
-        $scope.getEmployeeInfoById = function(id) {
-            return EmployeeDataService.getEmployeeById(id);
-        }
+        var employeesCN =  [
+            new Employee({
+                fullName : 'Christie Xie',
+                title : '公司创办人',
+                email : 'cxie@nuageinvrealty.com',
+                phoneNumber : '1(617)678-3889',
+                location : 'Boston',
+                profileImageURI : './images/employees/cxie.jpg',
+                language : '英文, 普通话',
+                certificate: '注册理财规划师',
+                wechatId: 'Christie_Xie'
+            }),
+            new Employee({
+                fullName : 'Bin Shen',
+                title : '高级顾问',
+                email : 'bshen@nuageinvrealty.com',
+                phoneNumber : '1(617)817-1782',
+                location : 'Boston',
+                profileImageURI : './images/employees/bshen.jpg',
+                language : '英文, 普通话',
+                certificate: null,
+                wechateId: 'isen2006'
+            }),
+            new Employee({
+                fullName: 'Jing Mai',
+                title:'高级顾问',
+                email: 'jmai@nuageinvrealty.com',
+                phoneNumber: '1(207)458-9749',
+                location: 'Boston',
+                profileImageURI: './images/employees/jmai.jpg',
+                language: '英文, 粤语',
+                wechatId:'jingrmai',
+                certificate: '注册会计师'
+            }),
+            new Employee({
+                fullName : 'Summer Xia',
+                title : '顾问',
+                email : 'sxia@nuageinvrealty.com',
+                phoneNumber : '1(617)319-3601',
+                location : 'Boston',
+                profileImageURI : './images/employees/sxia.jpg',
+                language : '英文, 普通话',
+                wechatId: 'summeronetree',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Wilber Chen',
+                title: '顾问',
+                email: 'wchen@nuageinvrealty.com',
+                phoneNumber: '1(857)334-1635',
+                location: 'Boston',
+                profileImageURI: './images/employees/wchen.jpg',
+                language: '英文, 普通话, 台语',
+                wechatId:'wilburchenus',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Zhou Chen',
+                title:'顾问',
+                email: 'zchen@nuageinvrealty.com',
+                phoneNumber: '1(781)521-2635',
+                location: 'Boston',
+                profileImageURI: './images/employees/zchen.png',
+                language: '英文, 普通话',
+                wechatId:'cn1960216387',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Vanessa Truong',
+                title: '顾问',
+                email: 'vtruong@nuageinvrealty.com',
+                phoneNumber: '1(508)654-0789',
+                location: 'Boston',
+                profileImageURI: './images/employees/vtruong.jpg',
+                certificate: '注册理财规划师',
+                language: '英文, 普通话, 粤语, 越南话',
+                wechatId: null
+            }),
+            new Employee({
+                fullName: 'Kim Walker',
+                title:'顾问',
+                email: 'kwalker@nuageinvrealty.com',
+                phoneNumber: '1(617)680-2733',
+                location: 'Boston',
+                profileImageURI: './images/employees/kwalker.jpg',
+                language: '英文',
+                wechatId: null,
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Joe Wang',
+                title:'顾问',
+                email: 'junlewang@gmail.com',
+                phoneNumber: '1(781)308-0291',
+                location: 'Boston',
+                profileImageURI: './images/employees/jwang.jpg',
+                language: '英文, 普通话',
+                wechatId:'JoeWang606297'
+            }),
+            new Employee({
+                fullName: 'Emily Ji',
+                title:'顾问',
+                email: 'xiaocen0731@gmail.com',
+                phoneNumber: '1(517)488-6368',
+                location: 'Boston',
+                profileImageURI: './images/employees/eji.jpg',
+                language: '英文, 普通话',
+                wechatId:'xiaocen0731',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Ran Cui',
+                title:'顾问',
+                email: 'rancdo@gmail.com',
+                phoneNumber: '1(508)308-8280',
+                location: 'Boston',
+                profileImageURI: './images/employees/rcui.jpg',
+                language: '英文, 普通话',
+                wechatId:'Ran_C_0208'
+            }),
+            new Employee({
+                fullName: 'Hannah Quan',
+                title:'顾问',
+                email: 'hannah.hao.quan@gmail.com',
+                phoneNumber: '1(617)901-9160',
+                location: 'Boston',
+                profileImageURI: './images/employees/hquan.png',
+                language: '英文, 普通话',
+                wechatId:'Hannah_Quan',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Max Xu',
+                title:'顾问',
+                email: 'slowsmile820@gmail.com',
+                phoneNumber: '1(617)901-5937',
+                location: 'New York',
+                profileImageURI: null,
+                language: '英文, 普通话',
+                wechatId:'maxxu_ny',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Kate Song',
+                title:'顾问',
+                email: 'ksong@nuageinvrealty.com',
+                phoneNumber: '1(917)972-1668',
+                location: 'New York',
+                profileImageURI: null,
+                language: '英文, 普通话',
+                wechatId:'youriva',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Jeff Zhou',
+                title:'顾问',
+                email: 'jeff.zhou@acertallc.com',
+                phoneNumber: '1(860)532-9018',
+                location: 'Connecticut',
+                profileImageURI: null,
+                language: '英文, 普通话',
+                wechatId:'rzredge',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Joey Jiang',
+                title:'顾问代表(上海)',
+                email: 'jiangchao1103@hotmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: '英文, 普通话',
+                wechatId:'CJiang1103',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Letian Xia',
+                title:'顾问代表(上海)',
+                email: 'letianx@foxmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: '英文, 普通话',
+                wechatId:'letianxia1',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Chun-Kai Wang',
+                title:'顾问代表(山东)',
+                email: 'phenomenoner@gmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: '英文, 普通话, 台语',
+                wechatId:'chunkai1983',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Pibin Teng',
+                title:'顾问代表(山东)',
+                email: 'pibinteng@gmail.com',
+                phoneNumber: '011(86)13764090590',
+                location: 'China',
+                profileImageURI: null,
+                language: '英文, 普通话',
+                wechatId:'teng8809',
+                certificate: null
+            })
+        ];
+
+        var getEmployeeCollectionByLocation = function(location, language) {
+            var employeesByLocation = [];
+            var employees = [];
+            if(language === 'en_US') {
+                employees = employeesEn;
+            } else if (language === 'cn-simplified') {
+                employees = employeesCN;
+            }
+            for(var i = 0; i < employees.length; i++) {
+                if(employees[i].location === location) {
+                    employeesByLocation.push(employees[i]);
+                }
+            }
+            return employeesByLocation;
+        };
+
+        var getEmployees = function() {
+            $scope.bostonEmployees = getEmployeeCollectionByLocation('Boston', $rootScope.selectLanguage);
+            $scope.newYorkEmployees = getEmployeeCollectionByLocation('New York', $rootScope.selectLanguage);
+            $scope.connecticutEmployees = getEmployeeCollectionByLocation('Connecticut', $rootScope.selectLanguage);
+            $scope.overSeaEmployees = getEmployeeCollectionByLocation('China', $rootScope.selectLanguage);
+        };
+
+        getEmployees();
+
+        $scope.$watch('selectLanguage', function(newValue, oldValue){
+            if(newValue !== oldValue) {
+                getEmployees();
+            }
+        });
 
     }]);

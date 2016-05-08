@@ -4,7 +4,8 @@ var app = angular.module('nuageInvestment', [
     'pascalprecht.translate',
     'Arcus.Config',
     'arcus.utilities',
-    'ngMaterial'
+    'ngMaterial',
+    'ngNotify'
 ])
 
 
@@ -16,13 +17,12 @@ var app = angular.module('nuageInvestment', [
             suffix: '.json'
         });
 
-        $translateProvider.preferredLanguage('en_US');
+        $translateProvider.preferredLanguage('cn-simplified');
         $translateProvider.useSanitizeValueStrategy(null);
     }])
 
 
     .run(['$rootScope', function($rootScope) {
         'use strict';
-
-
+        $rootScope.selectLanguage = 'cn-simplified';
     }]);

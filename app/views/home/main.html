@@ -1,7 +1,6 @@
-<section class="section section-hero section-center section-image">
+<section class="section section-hero section-center hidden-xs">
     <div class="container extra-padding-md">
-        <nav class="navbar" id="navbar-home">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        <nav class="navbar remove-bottom-margin" id="navbar-home">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nuage-navbar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -9,7 +8,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Nuage</a>
+                <a class="navbar-brand remove-top-bottom-padding" href="#" style="width: 300px">
+                    <img src="../../images/neuage-logo-lg1.png" style="width: 100%" class="display-inline ">
+                </a>
+
             </div>
             <div class="collapse navbar-collapse">
                 <form class="navbar-form navbar-left navbar-languaage-select" role="serach">
@@ -33,20 +35,35 @@
                             {{"TEAM" | translate}}
                         </a>
                     </li>
-                    <li data-match-route="/marketing.careers">
-                        <a class="nav-link" ui-sref="marketing.careers">
-                            {{"CAREERS" | translate}}
-                        </a>
-                    </li>
-                    <li data-match-route="/marketing.resources">
+                    <!--<li data-match-route="/marketing.careers" class="hidden-sm">-->
+                        <!--<a class="nav-link" ui-sref="marketing.careers">-->
+                            <!--{{"CAREERS" | translate}}-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <li data-match-route="/marketing.resources" class="hidden-sm">
                         <a class="nav-link" ui-sref="marketing.resources">
                             {{"RESOURCES" | translate}}
                         </a>
                     </li>
-                    <li data-match-route="/marketing.contact">
+                    <li data-match-route="/marketing.contact" class="hidden-sm">
                         <a class="nav-link" ui-sref="marketing.contact">
                             {{"CONTACT" | translate}}
                         </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle visible-sm nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{"MORE_NAV" | translate}} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-match-route="/marketing.resources">
+                                <a class="nav-link" ui-sref="marketing.resources">
+                                    {{"RESOURCES" | translate}}
+                                </a>
+                            </li>
+                            <li data-match-route="/marketing.contact">
+                                <a class="nav-link" ui-sref="marketing.contact">
+                                    {{"CONTACT" | translate}}
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <md-button class="md-raised md-primary pull-right">
@@ -57,19 +74,64 @@
             </div>
         </nav>
     </div>
-    <section class="section section-center" style="min-height: 400px;">
-        <div style="min-height: 100%;">
-            <div class="container" style="min-height: 100%; display: table" >
-                <div class="row" style="min-height: 100%; display: table-cell; vertical-align: middle;">
-                    <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2" style="min-height: 100%; display: table-cell; vertical-align: middle;">
-                        <div class="hero-title-wrapper" style="min-height: 100%; display: table-cell; vertical-align: middle;">
-                            <h1 class="text-center text-hero">Real Estate Brokage. Investment. Private Placement</h1>
-                        </div>
-                    </div>
-                </div>
+    <div class="display-table">
+        <div class="container table-content">
+            <!--<h1 class="text-center">{{"HERO_TITLE" | translate}}</h1>-->
+        </div>
+    </div>
+</section>
+<nav class="navbar navbar-default visible-xs navbar-fixed-top remove-bottom" id="mobile-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header" >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="width: 60px;">
+                <img src="../../images/neuage-logo-small.png" style="width: 100%" class="display-inline ">
+            </a>
+            <div class="navbar-toggle pull-left">
+                <a ng-class="{'selected-language-navbar-mobile' : isLanguageSelected('en_US')}" ng-click="translate('en_US')">EN</a> <p class="text-white display-inline remove-all-margin">/</p>
+                <a ng-class="{'selected-language-navbar-mobile' : isLanguageSelected('cn-simplified')}" ng-click="translate('cn-simplified')">中文</a>
             </div>
         </div>
-    </section>
+        <div class="collapse navbar-collapse mobile-navbar-canvas nav-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills nav-justified">
+                <li data-match-route="/home">
+                    <a class="nav-link" ui-sref="home.main" data-toggle="collapse" data-target=".nav-collapse.in">
+                        {{"HOME" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.service">
+                    <a class="nav-link" ui-sref="marketing.service" data-toggle="collapse" data-target=".nav-collapse.in">
+                        {{"SERVICE" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.team">
+                    <a class="nav-link" ui-sref="marketing.team" data-toggle="collapse" data-target=".nav-collapse.in">
+                        {{"TEAM" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.resources">
+                    <a class="nav-link" ui-sref="marketing.resources" data-toggle="collapse" data-target=".nav-collapse.in">
+                        {{"RESOURCES" | translate}}
+                    </a>
+                </li>
+                <li data-match-route="/marketing.contact">
+                    <a class="nav-link" ui-sref="marketing.contact" data-toggle="collapse" data-target=".nav-collapse.in">
+                        {{"CONTACT" | translate}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="section section-hero-mobile hidden-lg hidden-md hidden-sm" style="margin-top: 56px;">
+    <div class="container section-hero-mobile-contain">
+        <!--<h1>Real Estate Brokage. Investment. Private Placement</h1>-->
+    </div>
 </section>
 <section class="section section-padded-sm">
     <div class="container">
@@ -77,47 +139,6 @@
         <h4 class="extra-padding-top-sm">{{"WELCOME_1" | translate}}</h4>
         <h4>{{"WELCOME_2" | translate}}</h4>
         <h4>{{"WELCOME_3" | translate}}</h4>
-    </div>
-</section>
-<section class="section section-padded-sm section-light-gray">
-    <div class="container">
-        <h1 class="section-header extra-padding-bottom-md extra-margin-bottom-sm">{{"CONTACT" | translate}}</h1>
-        <div class="row">
-            <div class="col-md-5">
-                <h3 class="text-center extra-padding-bottom-sm text-red">Say Hello</h3>
-                <h4>Do you have an investment project in mind or simply want to buy a house? Either way don't hesitate to contact us</h4>
-                <form class="extra-padding-sm" ng-submit="sendMessage()">
-                    <md-input-container class="md-block extra-padding-top-sm" >
-                        <label>Name</label>
-                        <input type="text" ng-model="messagnerName" ng-required="true">
-                    </md-input-container>
-                    <md-input-container class="md-block extra-padding-top-sm" >
-                        <label>Email</label>
-                        <input type="email" ng-model="messagnerEmail" ng-required="true">
-                    </md-input-container>
-                    <md-input-container class="md-block extra-padding-top-sm">
-                        <label>Message</label>
-                        <textarea ng-model="messangerMessage" md-maxlength="150" rows="5" md-select-on-focus="" ng-required="true"></textarea>
-                    </md-input-container>
-                    <md-button type="submit" class="md-raised md-primary pull-right">{{"SUBMIT" | translate}}</md-button>
-                </form>
-            </div>
-            <div class="col-md-5 pull-right">
-                <h3 class="text-center extra-padding-bottom-sm text-red">Where we are</h3>
-                <div class="map-container">
-                    <iframe class="map" src="https://www.google.com/maps/embed/v1/place?q=Nuage+Investment+Realty,+Washington+Street,+Newton,+MA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
-                </div>
-                <div class="row extra-padding-sm">
-                    <div class="col-xs-12">
-                        <ul class="fa-ul">
-                            <li class="extra-padding-bottom-sm"><i class="fa fa-li fa-map-marker extra-margin-right-sm"></i>1185 Washington Street Suite #1 Newton, MA 02465</li>
-                            <li class="extra-padding-bottom-sm"><a class="contact-link" href="tel:{{telephone}}"><i class="fa fa-li fa-mobile  extra-margin-right-sm"></i>+1 (617) 678-3889</a></li>
-                            <li class="extra-padding-bottom-sm"><a class="contact-link" href="mailto:{{email}}"><i class="fa fa-li fa-envelope-o  extra-margin-right-sm"></i>{{email}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <div ng-include="'/views/partials/footer.html'"></div>

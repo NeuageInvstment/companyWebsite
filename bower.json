@@ -1,5 +1,5 @@
 {
-  "name": "nuage-investment",
+  "name": "nuageInvestment",
   "version": "",
   "dependencies": {
     "angular": "",
@@ -10,7 +10,8 @@
     "angular-translate-loader-static-files": "*",
     "angular-ui-router": "0.2.10",
     "bootstrap": "~3.3.5",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "ng-notify": "~0.7.2"
   },
   "devDependencies": {
     "angular-mocks": ""

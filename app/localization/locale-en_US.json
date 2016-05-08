@@ -1,6 +1,6 @@
 {
     "HOME" : "Home",
-    "SERVICE" : "Service",
+    "SERVICE" : "Services",
     "TEAM" : "Team",
     "CAREERS": "Careers",
     "CONTACT": "Contact Us",
@@ -9,7 +9,7 @@
     "WELCOME_1": "Nuage Investment Realty LLC, founded in 2013, is a comprehensive real estate investment firm that offers brokerage services and private placements to retail and institutional clients.  We advise clients on the entire real-estate investment process through residential and commercial property sales and private equity transactions.",
     "WELCOME_2": "Whether it's purchasing a primary residence, investing into a multi-family property, or participating in a larger real-estate development project, Nuage Investment Realty helps clients identify opportunities that best fit their goals by focusing on all aspects of their risk, return profile and cash flow needs.",
     "WELCOME_3":"Contact our advisors to discuss your next real-estate investment decision and to learn how you can capitalize on current opportunities in this ever changing real-estate market.",
-    "FOR_RETAIL_CLIENTS": "For Retail Clicents",
+    "FOR_RETAIL_CLIENTS": "For Retail Clients",
     "FOR_RETAIL_CLIENTS_DESCRIPTION" : "Nuage Investment Realty advises individual clients on the purchase and sale of primary residence and investment property in the Greater Boston area. With the presence of world-known higher education institutions, and a growing number of biotech, pharmaceutical and technology start-up companies, we believe there are many reasons to consider Boston a home or an investment opportunity. Whether it's a condo, single family house, or multi-family investment property, we have many partners in the local area including mortgage brokers, attorneys, contractors, inspectors to help you with a seamless process. Typical transactions are within 5 million USD.",
     "BUTTON_INTERNATIONAL_BUYER_GUIDE" : "Learn More About International Investment For Residential Property",
     "FOR_INSTITUTIONAL_CLIENT": "For Institutional Clients",
@@ -271,5 +271,15 @@
     "EXEMPTION_SUBPOINT_2": "The filing deadline varies, depending on different city’s requirements.",
     "TAX_EXEMPTION_SUBNOTE": "The owner has to pay at least 10% of the assessment value’s tax except for certain persons with physical infirmities and financial hardship.",
     "FOR_MORE_INFO": "For more information",
-    "CLICK_HERE": "Click here"
+    "CLICK_HERE": "Click here",
+    "NAME": "Name",
+    "EMAIL": "E-mal",
+    "MESSAGE": "Message",
+    "MORE_NAV": "More",
+    "OUR_SERVICE": "Our Services",
+    "BOSTON": "Boston",
+    "NEW_YORK": "New York",
+    "CONNECTICT": "Connecticut",
+    "CHINA": "China",
+    "READ_MORE": "Read More"
 }

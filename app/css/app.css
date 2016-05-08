@@ -42,6 +42,18 @@
 .display-inline {
   display: inline-block;
 }
+.display-block {
+  display: block;
+}
+.display-table {
+  display: table;
+  width: 100%;
+  height: calc(8%);
+}
+.display-table.table-content {
+  display: table-cell;
+  vertical-align: middle;
+}
 h1,
 h2,
 h3,
@@ -51,6 +63,7 @@ h6 {
   font-weight: 300;
   letter-spacing: 0.4px;
   line-height: 26px;
+  color: black;
 }
 h1.display-inline,
 h2.display-inline,
@@ -138,26 +151,26 @@ fieldset[disabled] .btn.btn-red.focus {
 }
 .btn.btn-navy {
   color: #fafafa;
-  background-color: #394349;
-  border-color: #394349;
+  background-color: #355c74;
+  border-color: #355c74;
 }
 .btn.btn-navy:focus,
 .btn.btn-navy.focus {
   color: #fafafa;
-  background-color: #23292c;
-  border-color: #010101;
+  background-color: #254051;
+  border-color: #0d171c;
 }
 .btn.btn-navy:hover {
   color: #fafafa;
-  background-color: #23292c;
-  border-color: #1e2327;
+  background-color: #254051;
+  border-color: #223b4a;
 }
 .btn.btn-navy:active,
 .btn.btn-navy.active,
 .open > .dropdown-toggle.btn.btn-navy {
   color: #fafafa;
-  background-color: #23292c;
-  border-color: #1e2327;
+  background-color: #254051;
+  border-color: #223b4a;
 }
 .btn.btn-navy:active:hover,
 .btn.btn-navy.active:hover,
@@ -169,8 +182,8 @@ fieldset[disabled] .btn.btn-red.focus {
 .btn.btn-navy.active.focus,
 .open > .dropdown-toggle.btn.btn-navy.focus {
   color: #fafafa;
-  background-color: #131618;
-  border-color: #010101;
+  background-color: #1a2d38;
+  border-color: #0d171c;
 }
 .btn.btn-navy:active,
 .btn.btn-navy.active,
@@ -186,17 +199,17 @@ fieldset[disabled] .btn.btn-navy:focus,
 .btn.btn-navy.disabled.focus,
 .btn.btn-navy[disabled].focus,
 fieldset[disabled] .btn.btn-navy.focus {
-  background-color: #394349;
-  border-color: #394349;
+  background-color: #355c74;
+  border-color: #355c74;
 }
 .btn.btn-navy .badge {
-  color: #394349;
+  color: #355c74;
   background-color: #fafafa;
 }
 .btn.btn-navy:hover {
   background-color: white;
-  color: #394349;
-  border-color: 1px solid #394349;
+  color: #355c74;
+  border-color: 1px solid #355c74;
 }
 .fa.fa-red {
   color: #FF3366;
@@ -252,6 +265,10 @@ a.selected-language-navbar {
   border-bottom: solid 1px #d72027;
   padding-bottom: 2px;
 }
+a.selected-language-navbar-mobile {
+  color: #355c74 !important;
+  background-color: white;
+}
 a.language-select-link-navbar-marketing {
   color: white;
 }
@@ -269,7 +286,7 @@ a.language-select-link-navbar-marketing:active {
   background-color: #F0F0EA;
 }
 .section.section-navy {
-  background-color: #394349;
+  background-color: #355c74;
 }
 .section.section-full-height {
   min-height: 100%;
@@ -297,15 +314,27 @@ a.language-select-link-navbar-marketing:active {
 .section.section-center {
   text-align: center;
 }
-.section.section-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
 .section.section-hero {
   background-image: url('/images/boston-hero.jpg');
   background-position: 50% 50%;
   min-height: 80%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.section.section-hero-mobile {
+  height: 80%;
+  width: 100%;
+  display: table;
+  background-image: url('/images/boston-hero.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section.section-hero-mobile .section-hero-mobile-contain {
+  display: table-cell;
+  vertical-align: middle;
 }
 .section .section-header {
   font-size: 30px;
@@ -493,7 +522,7 @@ a.language-select-link-navbar-marketing:active {
   color: #d72027;
 }
 .text-navy {
-  color: #394349;
+  color: #355c74;
 }
 .text-white {
   color: white;
@@ -520,6 +549,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -551,7 +581,7 @@ body .mainpage {
   border-radius: 0px;
 }
 .navbar.navbar-primary {
-  background-color: #394349;
+  background-color: #355c74;
 }
 .navbar.navbar-primary #nuage-navbar .nav-link {
   color: white;
@@ -575,4 +605,41 @@ body .mainpage {
   height: 100%;
   width: 100%;
   border: 0;
+}
+#mobile-navbar {
+  background-color: #355c74;
+}
+#mobile-navbar button {
+  border-color: transparent;
+}
+#mobile-navbar button:hover,
+#mobile-navbar button:active {
+  background-color: transparent;
+}
+#mobile-navbar button .icon-bar {
+  background-color: white;
+}
+#mobile-navbar .navbar-toggle {
+  border-color: transparent;
+}
+#mobile-navbar .navbar-toggle:hover,
+#mobile-navbar .navbar-toggle:active {
+  background-color: transparent;
+}
+#mobile-navbar .mobile-navbar-canvas {
+  background: #355c74 !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#mobile-navbar .mobile-navbar-canvas li {
+  border-bottom: 1px solid #ccc;
+}
+#mobile-navbar .mobile-navbar-canvas li a {
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: white;
+}
+#mobile-navbar .mobile-navbar-canvas li a:hover,
+#mobile-navbar .mobile-navbar-canvas li a:active {
+  background-color: #355c74;
 }

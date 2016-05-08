@@ -128,13 +128,13 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 // --------------------------------------------------------- //
                 //  MARKETING - CAREERS
                 // --------------------------------------------------------- //
-                .state('marketing.careers', {
-                    url: '/careers',
-                    templateUrl: '/views/marketing/careers.html',
-                    onEnter: [function() {
-
-                    }]
-                })
+                // .state('marketing.careers', {
+                //     url: '/careers',
+                //     templateUrl: '/views/marketing/careers.html',
+                //     onEnter: [function() {
+                //
+                //     }]
+                // })
 
                 // --------------------------------------------------------- //
                 //  MARKETING - RESOURCES
@@ -153,6 +153,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 // --------------------------------------------------------- //
                 .state('marketing.contact', {
                     url: '/contact',
+                    controller: 'ContactCtrl',
                     templateUrl: '/views/marketing/contact.html',
                     onEnter: [function() {
 
