@@ -92,16 +92,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Joe Wang',
-                title:'Advisor',
-                email: 'junlewang@gmail.com',
-                phoneNumber: '1(781)308-0291',
-                location: 'Boston',
-                profileImageURI: './images/employees/jwang.jpg',
-                language: 'English, Chinese (Mandarin)',
-                wechatId:'JoeWang606297'
-            }),
-            new Employee({
                 fullName: 'Emily Ji',
                 title:'Advisor',
                 email: 'xiaocen0731@gmail.com',
@@ -144,23 +134,12 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Max Xu',
-                title:'Advisor',
-                email: 'slowsmile820@gmail.com',
-                phoneNumber: '1(617)901-5937',
-                location: 'New York',
-                profileImageURI: null,
-                language: 'English, Chinese (Mandarin)',
-                wechatId:'maxxu_ny',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Kate Song',
+                fullName: 'Kino Song',
                 title:'Advisor',
                 email: 'ksong@nuageinvrealty.com',
                 phoneNumber: '1(917)972-1668',
                 location: 'New York',
-                profileImageURI: null,
+                profileImageURI: './images/employees/ksong.jpg',
                 language: 'English, Chinese (Mandarin)',
                 wechatId:'youriva',
                 certificate: null
@@ -312,16 +291,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Joe Wang',
-                title:'顾问',
-                email: 'junlewang@gmail.com',
-                phoneNumber: '1(781)308-0291',
-                location: 'Boston',
-                profileImageURI: './images/employees/jwang.jpg',
-                language: '英文, 普通话',
-                wechatId:'JoeWang606297'
-            }),
-            new Employee({
                 fullName: 'Emily Ji',
                 title:'顾问',
                 email: 'xiaocen0731@gmail.com',
@@ -364,23 +333,12 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Max Xu',
-                title:'顾问',
-                email: 'slowsmile820@gmail.com',
-                phoneNumber: '1(617)901-5937',
-                location: 'New York',
-                profileImageURI: null,
-                language: '英文, 普通话',
-                wechatId:'maxxu_ny',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Kate Song',
+                fullName: 'Kino Song',
                 title:'顾问',
                 email: 'ksong@nuageinvrealty.com',
                 phoneNumber: '1(917)972-1668',
                 location: 'New York',
-                profileImageURI: null,
+                profileImageURI: './images/employees/ksong.jpg',
                 language: '英文, 普通话',
                 wechatId:'youriva',
                 certificate: null

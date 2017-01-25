@@ -22,6 +22,7 @@
             <h2 class="remove-top-margin section-header">{{"NEW_YORK" | translate}}</h2>
             <div class="row">
                 <div class="col-md-3" ng-repeat="newYorkEmployee in newYorkEmployees" style="padding-left: 15px">
+                    <img src={{newYorkEmployee.profileImageURI}} class="img-responsive img-circle" style="height:130px; width:130px;">
                     <h4 class="display-inline remove-bottom-margin"><strong>{{newYorkEmployee.fullName}}</strong></h4>
                     <h4 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null"><strong>, {{newYorkEmployee.certificate}}</strong> </h4>
                     <h4 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null || newYorkEmployee.certificate == 'CPA' || newYorkEmployee.certificate == '注册会计师'"><strong>&reg;</strong></h4>
@@ -95,6 +96,7 @@
             <h2 class="remove-top-margin section-header">{{"NEW_YORK" | translate}}</h2>
             <div class="row">
                 <div class="col-sm-4" ng-repeat="newYorkEmployee in newYorkEmployees" style="padding-left: 15px">
+                    <img src={{newYorkEmployee.profileImageURI}} class="img-responsive img-circle" style="height:130px; width:130px;">
                     <h4 class="display-inline remove-bottom-margin"><strong>{{newYorkEmployee.fullName}}</strong></h4>
                     <h4 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null"><strong>, {{newYorkEmployee.certificate}}</strong> </h4>
                     <h4 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null || newYorkEmployee.certificate == 'CPA' || newYorkEmployee.certificate == '注册会计师'"><strong>&reg;</strong></h4>
@@ -169,6 +171,7 @@
             <div class="row">
                 <div class="col-xs-6" ng-repeat="newYorkEmployee in newYorkEmployees" style="padding-left: 15px">
                     <div class="text-center">
+                        <img src={{newYorkEmployee.profileImageURI}} class="img-responsive img-circle" style="height:130px; width:130px;">
                         <h6 class="display-inline remove-bottom-margin"><strong>{{newYorkEmployee.fullName}}</strong></h6>
                         <small class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null"><strong>, {{newYorkEmployee.certificate}}</strong> </small>
                         <small class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null || newYorkEmployee.certificate == 'CPA' || newYorkEmployee.certificate == '注册会计师'"><strong>&reg;</strong></small>
