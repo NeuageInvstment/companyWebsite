@@ -38,7 +38,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
             }),
             new Employee({
                 fullName : 'Summer Xia',
-                title : 'Advisor',
+                title : 'Senior Advisor',
                 email : 'sxia@nuageinvrealty.com',
                 phoneNumber : '1(617)319-3601',
                 location : 'Boston',
@@ -131,6 +131,16 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI: './images/employees/hquan.png',
                 language: 'English, Chinese (Mandarin)',
                 wechatId:'Hannah_Quan',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amelie Cheng',
+                title:'Advisor',
+                email: 'y.cheng0907@gmail.com',
+                phoneNumber: '1(917)345-9488',
+                location: 'Boston',
+                profileImageURI: './images/employees/acheng.jpg',
+                language: 'English, Chinese (Mandarin)',
                 certificate: null
             }),
             new Employee({
@@ -248,7 +258,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
             }),
             new Employee({
                 fullName : 'Summer Xia',
-                title : '顾问',
+                title : '高级顾问',
                 email : 'sxia@nuageinvrealty.com',
                 phoneNumber : '1(617)319-3601',
                 location : 'Boston',
@@ -341,6 +351,16 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI: './images/employees/hquan.png',
                 language: '英文, 普通话',
                 wechatId:'Hannah_Quan',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amelie Cheng',
+                title:'顾问',
+                email: 'y.cheng0907@gmail.com',
+                phoneNumber: '1(917)345-9488',
+                location: 'Boston',
+                profileImageURI: './images/employees/acheng.jpg',
+                language: '英文, 普通话',
                 certificate: null
             }),
             new Employee({

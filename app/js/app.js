@@ -4,12 +4,11 @@ var app = angular.module('nuageInvestment', [
     'pascalprecht.translate',
     'Arcus.Config',
     'arcus.utilities',
-    'ngMaterial',
     'ngNotify'
 ])
 
 
-    .config(['$stateProvider', '$urlRouterProvider' , '$translateProvider', function($stateProvider, $urlRouterProvider, $translateProvider) {
+    .config(['$stateProvider', '$urlRouterProvider' , '$translateProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $translateProvider, $locationProvider) {
         'use strict';
 
         $translateProvider.useStaticFilesLoader({
@@ -19,6 +18,8 @@ var app = angular.module('nuageInvestment', [
 
         $translateProvider.preferredLanguage('cn-simplified');
         $translateProvider.useSanitizeValueStrategy(null);
+
+        $locationProvider.html5Mode(true);
     }])
 
 

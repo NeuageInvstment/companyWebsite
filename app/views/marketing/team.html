@@ -58,10 +58,10 @@
             <h2 class="section-header">{{"CHINA" | translate}}</h2>
             <div class="row">
                 <div class="col-md-3" ng-repeat="overSeaEmployee in overSeaEmployees">
-                    <h5 class="display-inline remove-bottom-margin"><strong>{{overSeaEmployee.fullName}}</strong></h5>
-                    <h5 class="display-inline remove-bottom-margin" ng-hide="overSeaEmployee.certificate == null">, {{overSeaEmployee.certificate}} </h5>
-                    <h5 class="display-inline remove-bottom-margin" ng-hide="overSeaEmployee.certificate == null || overSeaEmployee.certificate == 'CPA' || overSeaEmployee.certificate == '注册会计师'">&reg;</h5>
-                    <h5 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{overSeaEmployee.title}}</i></h5>
+                    <h4 class="display-inline remove-bottom-margin"><strong>{{overSeaEmployee.fullName}}</strong></h4>
+                    <h4 class="display-inline remove-bottom-margin" ng-hide="overSeaEmployee.certificate == null">, {{overSeaEmployee.certificate}} </h4>
+                    <h4 class="display-inline remove-bottom-margin" ng-hide="overSeaEmployee.certificate == null || overSeaEmployee.certificate == 'CPA' || overSeaEmployee.certificate == '注册会计师'">&reg;</h4>
+                    <h4 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{overSeaEmployee.title}}</i></h4>
                     <ul class="fa-ul" style="margin-left: 23px;">
                         <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{overSeaEmployee.email}}">{{overSeaEmployee.email}}</a></li>
                         <li><i class="fa-li fa fa-phone"></i>{{overSeaEmployee.phoneNumber}}</li>
