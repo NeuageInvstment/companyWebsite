@@ -589,7 +589,6 @@ body .mainpage {
 .navbar.navbar-primary #nuage-navbar .nav-link:hover,
 .navbar.navbar-primary #nuage-navbar .nav-link:focus {
   background-color: transparent;
-  color: #d72027;
 }
 #navbar-home .nav-link {
   color: #d72027;
