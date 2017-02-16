@@ -16,7 +16,7 @@ var app = angular.module('nuageInvestment', [
             suffix: '.json'
         });
 
-        $translateProvider.preferredLanguage('en_us');
+        $translateProvider.preferredLanguage('en_US');
         $translateProvider.useSanitizeValueStrategy(null);
 
         // $locationProvider.html5Mode(true);
@@ -25,5 +25,5 @@ var app = angular.module('nuageInvestment', [
 
     .run(['$rootScope', function($rootScope) {
         'use strict';
-        $rootScope.selectLanguage = 'en_us';
+        $rootScope.selectLanguage = 'en_US';
     }]);
