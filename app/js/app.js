@@ -16,14 +16,14 @@ var app = angular.module('nuageInvestment', [
             suffix: '.json'
         });
 
-        $translateProvider.preferredLanguage('cn-simplified');
+        $translateProvider.preferredLanguage('en_us');
         $translateProvider.useSanitizeValueStrategy(null);
 
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
     }])
 
 
     .run(['$rootScope', function($rootScope) {
         'use strict';
-        $rootScope.selectLanguage = 'cn-simplified';
+        $rootScope.selectLanguage = 'en_us';
     }]);
