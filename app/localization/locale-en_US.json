@@ -1,9 +1,10 @@
 {
     "HOME" : "Home",
-    "SERVICE" : "Services",
+    "SERVICE" : "Service",
     "TEAM" : "Team",
     "CAREERS": "Careers",
     "CONTACT": "Contact Us",
+    "LOCATIONS": "Locations",
     "PROPERTY_SEARCH" : "Property Search",
     "WELCOME": "Welcome",
     "WELCOME_1": "Nuage Investment Realty LLC, founded in 2013, is a comprehensive real estate investment firm that offers brokerage services and private placements to retail and institutional clients.  We advise clients on the entire real-estate investment process through residential and commercial property sales and private equity transactions.",
@@ -281,5 +282,7 @@
     "NEW_YORK": "New York",
     "CONNECTICT": "Connecticut",
     "CHINA": "China",
-    "READ_MORE": "Read More"
+    "READ_MORE": "Read More",
+    "BOSTON_OFFICE": "Boston Office",
+    "NY_OFFICE": "New York Office"
 }

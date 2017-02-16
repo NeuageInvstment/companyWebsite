@@ -419,8 +419,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
         var getEmployees = function() {
             $scope.bostonEmployees = getEmployeeCollectionByLocation('Boston', $rootScope.selectLanguage);
             $scope.newYorkEmployees = getEmployeeCollectionByLocation('New York', $rootScope.selectLanguage);
-            $scope.connecticutEmployees = getEmployeeCollectionByLocation('Connecticut', $rootScope.selectLanguage);
-            $scope.overSeaEmployees = getEmployeeCollectionByLocation('China', $rootScope.selectLanguage);
         };
 
         getEmployees();
