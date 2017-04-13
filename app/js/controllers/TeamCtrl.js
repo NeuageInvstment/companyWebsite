@@ -49,24 +49,13 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
             }),
             new Employee({
                 fullName: 'Wilber Chen',
-                title: 'Advisor',
+                title: 'Senior Advisor',
                 email: 'wchen@nuageinvrealty.com',
                 phoneNumber: '1(857)334-1635',
                 location: 'Boston',
                 profileImageURI: './images/employees/wchen.jpg',
                 language: 'English, Chinese (Mandarin/Taiwanese)',
                 wechatId:'wilburchenus',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Zhou Chen',
-                title:'Advisor',
-                email: 'zchen@nuageinvrealty.com',
-                phoneNumber: '1(781)521-2635',
-                location: 'Boston',
-                profileImageURI: './images/employees/zchen.png',
-                language: 'English, Chinese (Mandarin)',
-                wechatId:'cn1960216387',
                 certificate: null
             }),
             new Employee({
@@ -134,8 +123,28 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Kino Song',
+                fullName: 'Chen Chen',
                 title:'Advisor',
+                email: 'nick6636@gmail.com',
+                phoneNumber: '1(978)654-1109',
+                location: 'Boston',
+                profileImageURI: './images/employees/cchen.jpg',
+                language: 'English, Chinese (Mandarin)',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amy Chen',
+                title:'Senior Advisor',
+                email: 'achen@nuageinvrealty.com',
+                phoneNumber: '1(617)480-7317',
+                location: 'Boston',
+                profileImageURI: './images/employees/achen.jpg',
+                language: 'English, Chinese (Mandarin/Taiwanese)',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Kino Song',
+                title:'Principal',
                 email: 'ksong@nuageinvrealty.com',
                 phoneNumber: '1(917)972-1668',
                 location: 'New York',
@@ -248,24 +257,13 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
             }),
             new Employee({
                 fullName: 'Wilber Chen',
-                title: '顾问',
+                title: '高级顾问',
                 email: 'wchen@nuageinvrealty.com',
                 phoneNumber: '1(857)334-1635',
                 location: 'Boston',
                 profileImageURI: './images/employees/wchen.jpg',
                 language: '英文, 普通话, 台语',
                 wechatId:'wilburchenus',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Zhou Chen',
-                title:'顾问',
-                email: 'zchen@nuageinvrealty.com',
-                phoneNumber: '1(781)521-2635',
-                location: 'Boston',
-                profileImageURI: './images/employees/zchen.png',
-                language: '英文, 普通话',
-                wechatId:'cn1960216387',
                 certificate: null
             }),
             new Employee({
@@ -333,8 +331,28 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Kino Song',
+                fullName: 'Chen Chen',
                 title:'顾问',
+                email: 'nick6636@gmail.com',
+                phoneNumber: '1(978)654-1109',
+                location: 'Boston',
+                profileImageURI: './images/employees/cchen.jpg',
+                language: '英文, 普通话',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amy Chen',
+                title:'高级顾问',
+                email: 'achen@nuageinvrealty.com',
+                phoneNumber: '1(617)480-7317',
+                location: 'Boston',
+                profileImageURI: './images/employees/achen.jpg',
+                language: '英文, 普通话, 台语',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Kino Song',
+                title:'公司创办人',
                 email: 'ksong@nuageinvrealty.com',
                 phoneNumber: '1(917)972-1668',
                 location: 'New York',
