@@ -133,6 +133,16 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
+                fullName: 'Amy Chen',
+                title:'Senior Advisor',
+                email: 'achen@nuageinvrealty.com',
+                phoneNumber: '1(617)480-7317',
+                location: 'Boston',
+                profileImageURI: './images/employees/achen.jpg',
+                language: 'English, Chinese (Mandarin/Taiwanese)',
+                certificate: null
+            }),
+            new Employee({
                 fullName: 'Kino Song',
                 title:'Principal',
                 email: 'ksong@nuageinvrealty.com',
@@ -328,6 +338,16 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 location: 'Boston',
                 profileImageURI: './images/employees/cchen.jpg',
                 language: '英文, 普通话',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amy Chen',
+                title:'高级顾问',
+                email: 'achen@nuageinvrealty.com',
+                phoneNumber: '1(617)480-7317',
+                location: 'Boston',
+                profileImageURI: './images/employees/achen.jpg',
+                language: '英文, 普通话, 台语',
                 certificate: null
             }),
             new Employee({
