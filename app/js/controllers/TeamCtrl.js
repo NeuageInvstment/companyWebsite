@@ -12,7 +12,9 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI : './images/employees/cxie.jpg',
                 language : 'English, Chinese (Mandarin)',
                 certificate: 'CFP',
-                wechatId: 'Christie_Xie'
+                wechatId: 'Christie_Xie',
+                license: 'Series 7, 63,66',
+                licenseUrl: 'https://brokercheck.finra.org/individual/summary/5236275'
             }),
             new Employee({
                 fullName : 'Bin Shen',
@@ -81,17 +83,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Emily Ji',
-                title:'Advisor',
-                email: 'xiaocen0731@gmail.com',
-                phoneNumber: '1(517)488-6368',
-                location: 'Boston',
-                profileImageURI: './images/employees/eji.jpg',
-                language: 'English, Chinese (Mandarin)',
-                wechatId:'xiaocen0731',
-                certificate: null
-            }),
-            new Employee({
                 fullName: 'Ran Cui',
                 title:'Advisor',
                 email: 'rancdo@gmail.com',
@@ -151,7 +142,9 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI: './images/employees/ksong.jpg',
                 language: 'English, Chinese (Mandarin)',
                 wechatId:'youriva',
-                certificate: null
+                certificate: null,
+                license: 'Series 82, 65',
+                licenseUrl: 'https://brokercheck.finra.org/individual/summary/6565548'
             }),
             new Employee({
                 fullName: 'Jeff Zhou',
@@ -220,7 +213,9 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI : './images/employees/cxie.jpg',
                 language : '英文, 普通话',
                 certificate: '注册理财规划师',
-                wechatId: 'Christie_Xie'
+                wechatId: 'Christie_Xie',
+                license: 'Series 7, 63,66',
+                licenseUrl: 'https://brokercheck.finra.org/individual/summary/5236275'
             }),
             new Employee({
                 fullName : 'Bin Shen',
@@ -289,17 +284,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
-                fullName: 'Emily Ji',
-                title:'顾问',
-                email: 'xiaocen0731@gmail.com',
-                phoneNumber: '1(517)488-6368',
-                location: 'Boston',
-                profileImageURI: './images/employees/eji.jpg',
-                language: '英文, 普通话',
-                wechatId:'xiaocen0731',
-                certificate: null
-            }),
-            new Employee({
                 fullName: 'Ran Cui',
                 title:'顾问',
                 email: 'rancdo@gmail.com',
@@ -359,7 +343,9 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI: './images/employees/ksong.jpg',
                 language: '英文, 普通话',
                 wechatId:'youriva',
-                certificate: null
+                certificate: null,
+                license: 'Series 82, 65',
+                licenseUrl: 'https://brokercheck.finra.org/individual/summary/6565548'
             }),
             new Employee({
                 fullName: 'Jeff Zhou',

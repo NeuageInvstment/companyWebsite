@@ -14,6 +14,8 @@ angular.module('nuageInvestment').factory('EmployeeModel', ['ModelGenerator',
             this.certificate = '' || null;
             this.profileImageURI = '' || null;
             this.language = '';
+            this.license = '';
+            this.licenseUrl = '';
 
             if (angular.isDefined(data)) {
                 ModelGenerator.generateFromData('EmployeeModel', this, data, this.optionalFields);

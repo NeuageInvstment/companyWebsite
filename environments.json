@@ -1,17 +1,20 @@
 {
     "production": {
         "constants": {
-            "DEBUG_MODE": false
+            "DEBUG_MODE": false,
+            "GMAP_API": "AIzaSyDzGvxstteuM7ANalrpQPYb_SYWELKadlo"
         }
     },
     "staging": {
         "constants": {
-            "DEBUG_MODE": false
+            "DEBUG_MODE": false,
+            "GMAP_API": "AIzaSyDzGvxstteuM7ANalrpQPYb_SYWELKadlo"
         }
     },
     "development": {
         "constants": {
-            "DEBUG_MODE": true
+            "DEBUG_MODE": true,
+            "GMAP_API": "AIzaSyDzGvxstteuM7ANalrpQPYb_SYWELKadlo"
         }
     }
 }

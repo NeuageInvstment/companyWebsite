@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('ContactCtrl', ['$scope', 'ContactDataService', 'ngNotify',
-    function($scope, ContactDataService, ngNotify) {
+angular.module('nuageInvestment').controller('ContactCtrl', ['$scope', 'ContactDataService', 'ngNotify', '$sce', 'GMAP_API',
+    function($scope, ContactDataService, ngNotify, $sce, GMAP_API) {
         'use strict';
 
         $scope.telephone = "+1(617)678 3889";
@@ -13,22 +13,10 @@ angular.module('nuageInvestment').controller('ContactCtrl', ['$scope', 'ContactD
                 message: this.messangerMessage
             };
 
-            ContactDataService.sendMessage(message)
-                .then(function(){
-                    ngNotify.set('Email submitted successfully', {
-                        type: 'success',
-                        position: 'top',
-                        duration: 3000
-                    });
-                }, function(){
-                    ngNotify.set('Failed to submit Email. Please contact try again later.', {
-                        type: 'error',
-                        position: 'top',
-                        duration: 3000
-                    });
-                });
-
         };
+
+        $scope.bostonOffice = $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?key='+ GMAP_API +'&q=810+Memorial+Dr+%23106,+Cambridge,+MA+02139');
+        $scope.newYorkOffice = $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?key='+ GMAP_API +'&q=745+5th+Ave+%23505,+New+York,+NY+10151');
 
 
     }]);
