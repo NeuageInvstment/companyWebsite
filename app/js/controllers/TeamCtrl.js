@@ -5,7 +5,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
         var employeesEn =  [
             new Employee({
                 fullName : 'Christie Xie',
-                title : 'Managing Principal',
+                title : 'Principal, Sales Manager',
                 email : 'cxie@nuageinvrealty.com',
                 phoneNumber : '1(617)678-3889',
                 location : 'Boston',
@@ -17,41 +17,50 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 licenseUrl: 'https://brokercheck.finra.org/individual/summary/5236275'
             }),
             new Employee({
+                fullName: 'Amy Chen',
+                title:'Senior Associate, Rental Manager',
+                email: 'achen@nuageinvrealty.com',
+                phoneNumber: '1(617)480-7317',
+                location: 'Boston',
+                profileImageURI: './images/employees/achen.jpg',
+                language: 'English, Chinese (Mandarin/Taiwanese)',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amelie Cheng',
+                title:'Senior Associate',
+                email: 'y.cheng0907@gmail.com',
+                phoneNumber: '1(917)345-9488',
+                location: 'Boston',
+                profileImageURI: './images/employees/acheng.jpg',
+                language: 'English, Chinese (Mandarin)',
+                certificate: null
+            }),
+            new Employee({
                 fullName : 'Bin Shen',
-                title : 'Senior Advisor',
-                email : 'bshen@nuageinvrealty.com',
+                title : 'Senior Associate',
+                email : 'shen.boston@gmail.com',
                 phoneNumber : '1(617)817-1782',
                 location : 'Boston',
                 profileImageURI : './images/employees/bshen.jpg',
                 language : 'English, Chinese (Mandarin)',
                 certificate: null,
-                wechateId: 'isen2006'
+                wechatId: 'isen2006'
             }),
             new Employee({
-                fullName: 'Jing Mai',
-                title:'Senior Advisor',
-                email: 'jmai@nuageinvrealty.com',
-                phoneNumber: '1(207)458-9749',
-                location: 'Boston',
-                profileImageURI: './images/employees/jmai.jpg',
-                language: 'English, Chinese (Cantonese)',
-                wechatId:'jingrmai',
-                certificate: 'CPA'
-            }),
-            new Employee({
-                fullName : 'Summer Xia',
-                title : 'Senior Advisor',
-                email : 'sxia@nuageinvrealty.com',
-                phoneNumber : '1(617)319-3601',
+                fullName : 'Grace Hui',
+                title : 'Senior Associate',
+                email : 'ghui@nuage.group',
+                phoneNumber : '',
                 location : 'Boston',
-                profileImageURI : './images/employees/sxia.jpg',
-                language : 'English, Chinese(Mandarin)',
-                wechatId: 'summeronetree',
-                certificate: null
+                profileImageURI : './images/employees/ghui.jpg',
+                language : 'English, Chinese (Mandarin)',
+                certificate: null,
+                wechatId: ''
             }),
             new Employee({
                 fullName: 'Wilber Chen',
-                title: 'Senior Advisor',
+                title: 'Senior Associate',
                 email: 'wchen@nuageinvrealty.com',
                 phoneNumber: '1(857)334-1635',
                 location: 'Boston',
@@ -61,8 +70,73 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
+                fullName : 'Summer Xia',
+                title : 'Senior Associate',
+                email : 'sxia@nuageinvrealty.com',
+                phoneNumber : '1(617)319-3601',
+                location : 'Boston',
+                profileImageURI : './images/employees/sxia.jpg',
+                language : 'English, Chinese(Mandarin)',
+                wechatId: 'summeronetree',
+                certificate: null
+            }),
+            new Employee({
+                fullName : 'Grace Liao',
+                title : 'Senior Associate',
+                email : 'gliao@nuageinvrealty.com',
+                phoneNumber : '1(617)803-0079',
+                location : 'Boston',
+                profileImageURI : './images/employees/gliao.png',
+                language : 'English, Chinese(Mandarin)',
+                wechatId: 'liaogracej',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Jing Mai',
+                title:'Senior Associate',
+                email: 'jmai@nuageinvrealty.com',
+                phoneNumber: '1(207)458-9749',
+                location: 'Boston',
+                profileImageURI: './images/employees/jmai.jpg',
+                language: 'English, Chinese (Cantonese)',
+                wechatId:'jingrmai',
+                certificate: 'CPA'
+            }),
+            new Employee({
+                fullName: 'Chen Chen',
+                title:'Senior Associate',
+                email: 'nick6636@gmail.com',
+                phoneNumber: '1(978)654-1109',
+                location: 'Boston',
+                profileImageURI: './images/employees/cchen.jpg',
+                language: 'English, Chinese (Mandarin)',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Lucas Zheng',
+                title: 'Associate',
+                email: 'lzheng@nuage.group',
+                phoneNumber: '1(508)654-0789',
+                location: 'Boston',
+                profileImageURI: './images/employees/lzheng.jpg',
+                certificate: 'CPA',
+                language: ' English, Chinese (Mandarin & Fuzhouness)',
+                wechatId: null
+            })
+            ,new Employee({
+                fullName: 'Chelsi Earls',
+                title: 'Associate',
+                email: 'TBD',
+                phoneNumber: 'TBD',
+                location: 'Boston',
+                profileImageURI: './images/employees/cearls.jpg',
+                certificate: null,
+                language: 'TBD',
+                wechatId: null
+            }),
+            new Employee({
                 fullName: 'Vanessa Truong',
-                title: 'Advisor',
+                title: 'Associate',
                 email: 'vtruong@nuageinvrealty.com',
                 phoneNumber: '1(508)654-0789',
                 location: 'Boston',
@@ -72,65 +146,14 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 wechatId: null
             }),
             new Employee({
-                fullName: 'Kim Walker',
-                title:'Advisor',
-                email: 'kwalker@nuageinvrealty.com',
-                phoneNumber: '1(617)680-2733',
-                location: 'Boston',
-                profileImageURI: './images/employees/kwalker.jpg',
-                language: 'English',
-                wechatId: null,
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Ran Cui',
-                title:'Advisor',
-                email: 'rancdo@gmail.com',
-                phoneNumber: '1(508)308-8280',
-                location: 'Boston',
-                profileImageURI: './images/employees/rcui.jpg',
-                language: 'English, Chinese (Mandarin)',
-                wechatId:'Ran_C_0208'
-            }),
-            new Employee({
                 fullName: 'Hannah Quan',
-                title:'Advisor',
+                title:'Associate',
                 email: 'hannah.hao.quan@gmail.com',
                 phoneNumber: '1(617)901-9160',
                 location: 'Boston',
                 profileImageURI: './images/employees/hquan.png',
                 language: 'English, Chinese (Mandarin)',
                 wechatId:'Hannah_Quan',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Amelie Cheng',
-                title:'Advisor',
-                email: 'y.cheng0907@gmail.com',
-                phoneNumber: '1(917)345-9488',
-                location: 'Boston',
-                profileImageURI: './images/employees/acheng.jpg',
-                language: 'English, Chinese (Mandarin)',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Chen Chen',
-                title:'Advisor',
-                email: 'nick6636@gmail.com',
-                phoneNumber: '1(978)654-1109',
-                location: 'Boston',
-                profileImageURI: './images/employees/cchen.jpg',
-                language: 'English, Chinese (Mandarin)',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Amy Chen',
-                title:'Senior Advisor',
-                email: 'achen@nuageinvrealty.com',
-                phoneNumber: '1(617)480-7317',
-                location: 'Boston',
-                profileImageURI: './images/employees/achen.jpg',
-                language: 'English, Chinese (Mandarin/Taiwanese)',
                 certificate: null
             }),
             new Employee({
@@ -218,37 +241,46 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 licenseUrl: 'https://brokercheck.finra.org/individual/summary/5236275'
             }),
             new Employee({
+                fullName: 'Amy Chen',
+                title:'高级顾问',
+                email: 'achen@nuageinvrealty.com',
+                phoneNumber: '1(617)480-7317',
+                location: 'Boston',
+                profileImageURI: './images/employees/achen.jpg',
+                language: '英文, 普通话, 台语',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Amelie Cheng',
+                title:'高级顾问',
+                email: 'y.cheng0907@gmail.com',
+                phoneNumber: '1(917)345-9488',
+                location: 'Boston',
+                profileImageURI: './images/employees/acheng.jpg',
+                language: '英文, 普通话',
+                certificate: null
+            }),
+            new Employee({
                 fullName : 'Bin Shen',
                 title : '高级顾问',
-                email : 'bshen@nuageinvrealty.com',
+                email : 'shen.boston@gmail.com',
                 phoneNumber : '1(617)817-1782',
                 location : 'Boston',
                 profileImageURI : './images/employees/bshen.jpg',
                 language : '英文, 普通话',
                 certificate: null,
-                wechateId: 'isen2006'
+                wechatId: 'isen2006'
             }),
             new Employee({
-                fullName: 'Jing Mai',
-                title:'高级顾问',
-                email: 'jmai@nuageinvrealty.com',
-                phoneNumber: '1(207)458-9749',
-                location: 'Boston',
-                profileImageURI: './images/employees/jmai.jpg',
-                language: '英文, 粤语',
-                wechatId:'jingrmai',
-                certificate: '注册会计师'
-            }),
-            new Employee({
-                fullName : 'Summer Xia',
+                fullName : 'Grace Hui',
                 title : '高级顾问',
-                email : 'sxia@nuageinvrealty.com',
-                phoneNumber : '1(617)319-3601',
+                email : 'ghui@nuage.group',
+                phoneNumber : '',
                 location : 'Boston',
-                profileImageURI : './images/employees/sxia.jpg',
+                profileImageURI : './images/employees/ghui.jpg',
                 language : '英文, 普通话',
-                wechatId: 'summeronetree',
-                certificate: null
+                certificate: null,
+                wechatId: ''
             }),
             new Employee({
                 fullName: 'Wilber Chen',
@@ -262,6 +294,71 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
+                fullName : 'Summer Xia',
+                title : '高级顾问',
+                email : 'sxia@nuageinvrealty.com',
+                phoneNumber : '1(617)319-3601',
+                location : 'Boston',
+                profileImageURI : './images/employees/sxia.jpg',
+                language : '英文, 普通话',
+                wechatId: 'summeronetree',
+                certificate: null
+            }),
+            new Employee({
+                fullName : 'Grace Liao',
+                title : '高级顾问',
+                email : 'gliao@nuageinvrealty.com',
+                phoneNumber : '1(617)803-0079',
+                location : 'Boston',
+                profileImageURI : './images/employees/gliao.png',
+                language : '英文, 普通话',
+                wechatId: 'liaogracej',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Jing Mai',
+                title:'高级顾问',
+                email: 'jmai@nuageinvrealty.com',
+                phoneNumber: '1(207)458-9749',
+                location: 'Boston',
+                profileImageURI: './images/employees/jmai.jpg',
+                language: '英文, 粤语',
+                wechatId:'jingrmai',
+                certificate: '注册会计师'
+            }),
+            new Employee({
+                fullName: 'Chen Chen',
+                title:'高级顾问',
+                email: 'nick6636@gmail.com',
+                phoneNumber: '1(978)654-1109',
+                location: 'Boston',
+                profileImageURI: './images/employees/cchen.jpg',
+                language: '英文, 普通话',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Lucas Zheng',
+                title: '顾问',
+                email: 'lzheng@nuage.group',
+                phoneNumber: '1(508)654-0789',
+                location: 'Boston',
+                profileImageURI: './images/employees/lzheng.jpg',
+                certificate: '注册会计师',
+                language: '英文, 普通话, 福建話',
+                wechatId: null
+            })
+            ,new Employee({
+                fullName: 'Chelsi Earls',
+                title: '顾问',
+                email: 'TBD',
+                phoneNumber: 'TBD',
+                location: 'Boston',
+                profileImageURI: './images/employees/cearls.jpg',
+                certificate: null,
+                language: 'TBD',
+                wechatId: null
+            }),
+            new Employee({
                 fullName: 'Vanessa Truong',
                 title: '顾问',
                 email: 'vtruong@nuageinvrealty.com',
@@ -273,27 +370,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 wechatId: null
             }),
             new Employee({
-                fullName: 'Kim Walker',
-                title:'顾问',
-                email: 'kwalker@nuageinvrealty.com',
-                phoneNumber: '1(617)680-2733',
-                location: 'Boston',
-                profileImageURI: './images/employees/kwalker.jpg',
-                language: '英文',
-                wechatId: null,
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Ran Cui',
-                title:'顾问',
-                email: 'rancdo@gmail.com',
-                phoneNumber: '1(508)308-8280',
-                location: 'Boston',
-                profileImageURI: './images/employees/rcui.jpg',
-                language: '英文, 普通话',
-                wechatId:'Ran_C_0208'
-            }),
-            new Employee({
                 fullName: 'Hannah Quan',
                 title:'顾问',
                 email: 'hannah.hao.quan@gmail.com',
@@ -302,36 +378,6 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI: './images/employees/hquan.png',
                 language: '英文, 普通话',
                 wechatId:'Hannah_Quan',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Amelie Cheng',
-                title:'顾问',
-                email: 'y.cheng0907@gmail.com',
-                phoneNumber: '1(917)345-9488',
-                location: 'Boston',
-                profileImageURI: './images/employees/acheng.jpg',
-                language: '英文, 普通话',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Chen Chen',
-                title:'顾问',
-                email: 'nick6636@gmail.com',
-                phoneNumber: '1(978)654-1109',
-                location: 'Boston',
-                profileImageURI: './images/employees/cchen.jpg',
-                language: '英文, 普通话',
-                certificate: null
-            }),
-            new Employee({
-                fullName: 'Amy Chen',
-                title:'高级顾问',
-                email: 'achen@nuageinvrealty.com',
-                phoneNumber: '1(617)480-7317',
-                location: 'Boston',
-                profileImageURI: './images/employees/achen.jpg',
-                language: '英文, 普通话, 台语',
                 certificate: null
             }),
             new Employee({

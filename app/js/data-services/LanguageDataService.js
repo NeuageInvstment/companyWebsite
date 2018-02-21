@@ -1,7 +1,7 @@
 angular.module('nuageInvestment').factory('LanguageDataService', ['$rootScope', '$q', '$http', '$cookies', '$translate',
     function($rootScope, $q, $http, $cookies, $translate) {
         'use strict';
-        var LANGUAGE_COOKIE = 'languagecookie';
+        var LANGUAGE_COOKIE = 'NUAGE_GROUP_SELECTED_LANGUAGE';
 
         var _setLanguage = function(languageKey) {
             $translate.use(languageKey);
@@ -19,6 +19,9 @@ angular.module('nuageInvestment').factory('LanguageDataService', ['$rootScope', 
             },
 
             setLanguage: function(languageKey) {
+                if ($cookies.get(LANGUAGE_COOKIE)) {
+                  $cookies.remove(LANGUAGE_COOKIE);
+                }
                 $cookies.put(LANGUAGE_COOKIE, languageKey);
                 _setLanguage(languageKey);
             }
