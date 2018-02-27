@@ -51,12 +51,12 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 fullName : 'Grace Hui',
                 title : 'Senior Associate',
                 email : 'ghui@nuage.group',
-                phoneNumber : '',
+                phoneNumber : '1(339)970-4114',
                 location : 'Boston',
                 profileImageURI : './images/employees/ghui.jpg',
-                language : 'English, Chinese (Mandarin)',
+                language : 'English, Chinese (Mandarin/Cantonese)',
                 certificate: null,
-                wechatId: ''
+                wechatId: 'gracedada'
             }),
             new Employee({
                 fullName: 'Wilber Chen',
@@ -122,17 +122,17 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: 'CPA',
                 language: ' English, Chinese (Mandarin & Fuzhouness)',
                 wechatId: null
-            })
-            ,new Employee({
+            }),
+            new Employee({
                 fullName: 'Chelsi Earls',
                 title: 'Associate',
-                email: 'TBD',
-                phoneNumber: 'TBD',
+                email: 'cearls@gmail.com ',
+                phoneNumber: '1(617)448-9194',
                 location: 'Boston',
                 profileImageURI: './images/employees/cearls.jpg',
                 certificate: null,
-                language: 'TBD',
-                wechatId: null
+                language: 'English, Chinese (Mandarin)',
+                wechatId: 'ChelsiCS'
             }),
             new Employee({
                 fullName: 'Vanessa Truong',
@@ -275,12 +275,12 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 fullName : 'Grace Hui',
                 title : '高级顾问',
                 email : 'ghui@nuage.group',
-                phoneNumber : '',
+                phoneNumber : '1(339)970-4114',
                 location : 'Boston',
                 profileImageURI : './images/employees/ghui.jpg',
-                language : '英文, 普通话',
+                language : '英文, 普通话, 粤语',
                 certificate: null,
-                wechatId: ''
+                wechatId: 'gracedada'
             }),
             new Employee({
                 fullName: 'Wilber Chen',
@@ -346,17 +346,17 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: '注册会计师',
                 language: '英文, 普通话, 福建話',
                 wechatId: null
-            })
-            ,new Employee({
+            }),
+            new Employee({
                 fullName: 'Chelsi Earls',
                 title: '顾问',
-                email: 'TBD',
-                phoneNumber: 'TBD',
+                email: 'cearls@gmail.com',
+                phoneNumber: '1(617)448-9194',
                 location: 'Boston',
                 profileImageURI: './images/employees/cearls.jpg',
                 certificate: null,
-                language: 'TBD',
-                wechatId: null
+                language: '英文, 普通话',
+                wechatId: 'ChelsiCS'
             }),
             new Employee({
                 fullName: 'Vanessa Truong',
