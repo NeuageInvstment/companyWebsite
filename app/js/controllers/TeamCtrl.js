@@ -157,6 +157,17 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 certificate: null
             }),
             new Employee({
+                fullName: 'Cora Zhang',
+                title:'Associate',
+                email: 'czhang@nuage.group',
+                phoneNumber: '1(646)932-1503',
+                location: 'Boston',
+                profileImageURI: './images/employees/czhang.jpeg',
+                language: 'English, Chinese (Mandarin, Fuzhouness)',
+                wechatId:'zhangcuihua888',
+                certificate: null
+            }),
+            new Employee({
                 fullName: 'Kino Song',
                 title:'Principal',
                 email: 'ksong@nuageinvrealty.com',
@@ -378,6 +389,17 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 profileImageURI: './images/employees/hquan.png',
                 language: '英文, 普通话',
                 wechatId:'Hannah_Quan',
+                certificate: null
+            }),
+            new Employee({
+                fullName: 'Cora Zhang',
+                title:'顾问',
+                email: 'czhang@nuage.group',
+                phoneNumber: '1(646)932-1503',
+                location: 'Boston',
+                profileImageURI: './images/employees/czhang.jpeg',
+                language: '英文, 普通话, 福建话',
+                wechatId:'zhangcuihua888',
                 certificate: null
             }),
             new Employee({
