@@ -3,18 +3,22 @@
         <div class="extra-padding-top-md extra-margin-top-md">
             <h2 class="extra-padding-bottom-sm section-header">{{"BOSTON" | translate}}</h2>
             <div class="row">
-                <div class="col-md-3 extra-padding-bottom-sm" ng-repeat="bostonEmployee in bostonEmployees" style="height: 340px">
+                <div class="col-md-3 extra-padding-bottom-sm" ng-repeat="bostonEmployee in bostonEmployees" style="height: 370px">
                     <img src={{bostonEmployee.profileImageURI}} class="img-responsive img-circle" style="height:130px; width:130px;">
                     <h4 class="display-inline remove-bottom-margin"><strong>{{bostonEmployee.fullName}}</strong></h4>
                     <h4 class="display-inline remove-bottom-margin" ng-hide="bostonEmployee.certificate == null"><strong>, {{bostonEmployee.certificate}} </strong></h4>
                     <h4 class="display-inline remove-bottom-margin" ng-hide="bostonEmployee.certificate == null || bostonEmployee.certificate == 'CPA' || bostonEmployee.certificate == '注册会计师'"><strong>&reg;</strong></h4>
                     <h4 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{bostonEmployee.title}}</i></h4>
                     <ul class="fa-ul" style="margin-left: 23px;">
-                        <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{bostonEmployee.email}}">{{bostonEmployee.email}}</a></li>
+                        <li><i class="fa-li far fa-envelope"></i><a class="contact-link" href="mailto:{{bostonEmployee.email}}">{{bostonEmployee.email}}</a></li>
                         <li><i class="fa-li fa fa-phone"></i>{{bostonEmployee.phoneNumber}}</li>
-                        <li ng-hide="bostonEmployee.wechatId == null"><i class="fa-li fa fa-wechat"></i>{{bostonEmployee.wechatId}}</li>
+                        <li ng-hide="bostonEmployee.wechatId == null"><i class="fa-li fab fa-weixin"></i>{{bostonEmployee.wechatId}}</li>
+                        <li ng-hide="bostonEmployee.lineId == null">
+                            <i class="fa-li fab fa-line"></i>
+                            {{bostonEmployee.lineId}}
+                        </li>
                         <li><i class="fa-li fa fa-language"></i>{{bostonEmployee.language}}</li>
-                        <li ng-hide="bostonEmployee.license == null || bostonEmployee.license.length === 0"><i class="fa-li fa fa-id-card-o"></i>{{bostonEmployee.license}}</li>
+                        <li ng-hide="bostonEmployee.license == null || bostonEmployee.license.length === 0"><i class="fa-li fas fa-certificate"></i>{{bostonEmployee.license}}</li>
                         <li ng-hide="bostonEmployee.licenseUrl == null || bostonEmployee.licenseUrl.length === 0"><i class="fa-li fa fa-globe"></i><a href="{{bostonEmployee.licenseUrl}}" target="_blank" class="contact-link">View Broker License</a></li>
                     </ul>
                 </div>
@@ -30,11 +34,11 @@
                     <h4 class="display-inline remove-bottom-margin" ng-hide="newYorkEmployee.certificate == null || newYorkEmployee.certificate == 'CPA' || newYorkEmployee.certificate == '注册会计师'"><strong>&reg;</strong></h4>
                     <h4 class="text-red extra-margin-top-xs extra-margin-bottom-xs"><i>{{newYorkEmployee.title}}</i></h4>
                     <ul class="fa-ul" style="margin-left: 23px;">
-                        <li><i class="fa-li fa fa-envelope-o"></i><a class="contact-link" href="mailto:{{newYorkEmployee.email}}">{{newYorkEmployee.email}}</a></li>
+                        <li><i class="fa-li far fa-envelope"></i><a class="contact-link" href="mailto:{{newYorkEmployee.email}}">{{newYorkEmployee.email}}</a></li>
                         <li><i class="fa-li fa fa-phone"></i>{{newYorkEmployee.phoneNumber}}</li>
-                        <li ng-hide="newYorkEmployee.wechatId == null"><i class="fa-li fa fa-wechat"></i>{{newYorkEmployee.wechatId}}</li>
+                        <li ng-hide="newYorkEmployee.wechatId == null"><i class="fa-li fab fa-weixin"></i>{{newYorkEmployee.wechatId}}</li>
                         <li><i class="fa-li fa fa-language"></i>{{newYorkEmployee.language}}</li>
-                        <li ng-hide="newYorkEmployee.license == null || newYorkEmployee.license.length == 0"><i class="fa-li fa fa-id-card-o"></i>{{newYorkEmployee.license}}</li>
+                        <li ng-hide="newYorkEmployee.license == null || newYorkEmployee.license.length == 0"><i class="fa-li fas fa-certificate"></i>{{newYorkEmployee.license}}</li>
                         <li ng-hide="newYorkEmployee.licenseUrl == null || newYorkEmployee.licenseUrl.length == 0"><i class="fa-li fa fa-globe"></i><a href="{{newYorkEmployee.licenseUrl}}" target="_blank" class="contact-link">View Broker License</a></li>
                     </ul>
                 </div>

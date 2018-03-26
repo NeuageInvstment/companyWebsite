@@ -7,7 +7,7 @@
     "angular-cookies": "1.4.3",
     "angular-translate": "2.1.0",
     "angular-translate-loader-static-files": "*",
-    "angular-ui-router": "0.2.10",
+    "angular-ui-router": "~1.0.15",
     "bootstrap": "~3.3.5",
     "fontawesome": "4.7.0",
     "ng-notify": "~0.7.2"

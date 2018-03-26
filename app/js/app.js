@@ -18,8 +18,6 @@ var app = angular.module('nuageInvestment', [
 
         $translateProvider.preferredLanguage('en_US');
         $translateProvider.useSanitizeValueStrategy(null);
-
-        // $locationProvider.html5Mode(true);
     }])
 
 

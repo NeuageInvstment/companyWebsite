@@ -11,6 +11,7 @@ angular.module('nuageInvestment').factory('EmployeeModel', ['ModelGenerator',
             this.phoneNumber = '';
             this.location = '';
             this.wechatId = '' || null;
+            this.lineId = '' || null;
             this.certificate = '' || null;
             this.profileImageURI = '' || null;
             this.language = '';

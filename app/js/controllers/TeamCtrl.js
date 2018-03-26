@@ -1,5 +1,5 @@
-angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope', '$state', 'EmployeeModel',
-    function($rootScope, $scope, $state, Employee) {
+angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope', '$state', '$sce', 'EmployeeModel',
+    function($rootScope, $scope, $state, $sce, Employee) {
         'use strict';
 
         var employeesEn =  [
@@ -23,6 +23,8 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 phoneNumber: '1(617)480-7317',
                 location: 'Boston',
                 profileImageURI: './images/employees/achen.jpg',
+                wechatId: 'fr348822',
+                lineId: 'tainanamy',
                 language: 'English, Chinese (Mandarin/Taiwanese)',
                 certificate: null
             }),
@@ -162,7 +164,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 email: 'czhang@nuage.group',
                 phoneNumber: '1(646)932-1503',
                 location: 'Boston',
-                profileImageURI: './images/employees/czhang.jpeg',
+                profileImageURI: './images/employees/czhang.jpg',
                 language: 'English, Chinese (Mandarin, Fuzhouness)',
                 wechatId:'zhangcuihua888',
                 certificate: null
@@ -258,6 +260,8 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 phoneNumber: '1(617)480-7317',
                 location: 'Boston',
                 profileImageURI: './images/employees/achen.jpg',
+                wechatId: 'fr348822',
+                lineId: 'tainanamy',
                 language: '英文, 普通话, 台语',
                 certificate: null
             }),
@@ -397,7 +401,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 email: 'czhang@nuage.group',
                 phoneNumber: '1(646)932-1503',
                 location: 'Boston',
-                profileImageURI: './images/employees/czhang.jpeg',
+                profileImageURI: './images/employees/czhang.jpg',
                 language: '英文, 普通话, 福建话',
                 wechatId:'zhangcuihua888',
                 certificate: null
