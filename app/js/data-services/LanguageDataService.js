@@ -15,7 +15,9 @@ angular.module('nuageInvestment').factory('LanguageDataService', ['$rootScope', 
         return {
 
             getSelectedLanguage: function() {
-                return $translate.use();
+                var deferred = $q.defer();
+                deferred.resolve($translate.use());
+                return deferred.promise;
             },
 
             setLanguage: function(languageKey) {

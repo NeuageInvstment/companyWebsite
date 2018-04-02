@@ -5,6 +5,7 @@
     "angular": "",
     "angular-bootstrap": "~0.13.0",
     "angular-cookies": "1.4.3",
+    "angular-material": "~1.1.8",
     "angular-translate": "2.1.0",
     "angular-translate-loader-static-files": "*",
     "angular-ui-router": "~1.0.15",

@@ -4,7 +4,9 @@ var app = angular.module('nuageInvestment', [
     'pascalprecht.translate',
     'Arcus.Config',
     'arcus.utilities',
-    'ngNotify'
+    'ngNotify',
+    'ngMaterial',
+    'ngMessages'
 ])
 
 

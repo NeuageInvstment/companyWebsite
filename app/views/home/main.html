@@ -1,6 +1,6 @@
 <section class="section section-hero section-center hidden-xs">
-    <div class="container-fluid extra-padding-md">
-        <nav class="navbar remove-bottom-margin" id="navbar-home">
+    <div class="container-fluid">
+        <nav class="navbar extra-padding-sm" id="navbar-home">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nuage-navbar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -8,19 +8,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand remove-top-bottom-padding" href="#" style="width: 250px">
-                    <img src="../../images/neuage-logo-lg2.png" style="width: 100%" class="display-inline ">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/neuage-logo-lg2.png" class="brand-logo">
                 </a>
-                <a class="navbar-brand remove-top-bottom-padding" href="#" style="width: 200px">
-                    <img src="../../images/neuage-logo-lg1.png" style="width: 100%" class="display-inline ">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/neuage-logo-lg1.png" class="brand-logo">
                 </a>
             </div>
             <div class="collapse navbar-collapse">
-                <form class="navbar-form navbar-left navbar-languaage-select" role="serach">
-                    <a class="language-select-link-navbar" ng-class="{'selected-language-navbar' : selectedLanguage('en_US')}" ng-click="translate('en_US')">EN</a>
-                    <p class="text-navy display-inline remove-all-margin">/</p>
-                    <a class="language-select-link-navbar" ng-class="{'selected-language-navbar' : selectedLanguage('cn-simplified')}" ng-click="translate('cn-simplified')">中文</a>
-                </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li data-match-route="/home">
                         <a class="nav-link" ui-sref="home.main">
@@ -37,11 +32,6 @@
                             {{"TEAM" | translate}}
                         </a>
                     </li>
-                    <!--<li data-match-route="/marketing.careers" class="hidden-sm">-->
-                        <!--<a class="nav-link" ui-sref="marketing.careers">-->
-                            <!--{{"CAREERS" | translate}}-->
-                        <!--</a>-->
-                    <!--</li>-->
                     <li data-match-route="/marketing.resources" class="hidden-sm">
                         <a class="nav-link" ui-sref="marketing.resources">
                             {{"RESOURCES" | translate}}
@@ -67,19 +57,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <button class="btn btn-primary navbar-btn">
-                            <a class="nav-link-button" href="http://vow.mlspin.com/idx/index.aspx?id=85297&PageType=1">{{"PROPERTY_SEARCH" | translate}}</a>
-                        </button>
-                    </li>
+                    <md-button class="md-raised md-primary" ui-sref="marketing.property-list">
+                        <i class="fas fa-search"></i>
+                        {{"PROPERTY_SEARCH" | translate}}
+                    </md-button>
                 </ul>
             </div>
         </nav>
-    </div>
-    <div class="display-table">
-        <div class="container table-content">
-            <!--<h1 class="text-center">{{"HERO_TITLE" | translate}}</h1>-->
-        </div>
     </div>
 </section>
 <nav class="navbar navbar-default visible-xs navbar-fixed-top remove-bottom" id="mobile-navbar">
@@ -94,10 +78,6 @@
             <a class="navbar-brand" href="#" style="width: 60px;">
                 <img src="../../images/neuage-logo-small.png" style="width: 100%" class="display-inline ">
             </a>
-            <div class="navbar-toggle pull-left">
-                <a ng-class="{'selected-language-navbar-mobile' : isLanguageSelected('en_US')}" ng-click="translate('en_US')">EN</a> <p class="text-white display-inline remove-all-margin">/</p>
-                <a ng-class="{'selected-language-navbar-mobile' : isLanguageSelected('cn-simplified')}" ng-click="translate('cn-simplified')">中文</a>
-            </div>
         </div>
         <div class="collapse navbar-collapse mobile-navbar-canvas nav-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav nav-pills nav-justified">
@@ -130,11 +110,6 @@
         </div>
     </div>
 </nav>
-<section class="section section-hero-mobile hidden-lg hidden-md hidden-sm" style="margin-top: 56px;">
-    <div class="container section-hero-mobile-contain">
-        <!--<h1>Real Estate Brokage. Investment. Private Placement</h1>-->
-    </div>
-</section>
 <section class="section section-padded-sm">
     <div class="container">
         <h1 class="section-header">{{"WELCOME" | translate}}</h1>

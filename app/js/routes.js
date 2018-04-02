@@ -29,9 +29,6 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
             .state('home', {
                 abstract: true,
                 url: '/',
-                data: {
-                    // bodyClass: 'nav-fixed-top'
-                },
                 controller: 'MainCtrl',
                 templateUrl: '/views/home/root.html',
                 onEnter: [function() {
@@ -44,9 +41,6 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 // --------------------------------------------------------- //
                 .state('home.main', {
                     url: '',
-                    data: {
-                        // bodyClass: 'homepage'
-                    },
                     templateUrl: '/views/home/main.html',
                     onEnter: [function() {
 
@@ -59,15 +53,35 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
             .state('marketing', {
                 abstract: true,
                 url: '',
-                data: {
-                    // bodyClass: 'nav-fixed-top'
-                },
                 controller: 'MarketingCtrl',
                 templateUrl: '/views/marketing/root.html',
                 onEnter: [function() {
 
                 }]
             })
+                // --------------------------------------------------------- //
+                //  MARKETING - PROPERTY LIST
+                // --------------------------------------------------------- //
+                .state('marketing.property-list', {
+                    url: '/property-list',
+                    controller: 'PropertyListCtrl',
+                    templateUrl: '/views/marketing/property-list.html',
+                    onEnter: [function() {
+
+                    }]
+                })
+
+                // --------------------------------------------------------- //
+                //  MARKETING - PROPERTY DETAIL
+                // --------------------------------------------------------- //
+                .state('marketing.property-detail', {
+                    url: '/property-list/:propertyId',
+                    controller: 'PropertyDetailCtrl',
+                    templateUrl: '/views/marketing/property.html',
+                    onEnter: [function() {
+
+                    }]
+                })
 
                 // --------------------------------------------------------- //
                 //  MARKETING - SERVICE
@@ -124,17 +138,6 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
 
                     }]
                 })
-
-                // --------------------------------------------------------- //
-                //  MARKETING - CAREERS
-                // --------------------------------------------------------- //
-                // .state('marketing.careers', {
-                //     url: '/careers',
-                //     templateUrl: '/views/marketing/careers.html',
-                //     onEnter: [function() {
-                //
-                //     }]
-                // })
 
                 // --------------------------------------------------------- //
                 //  MARKETING - RESOURCES

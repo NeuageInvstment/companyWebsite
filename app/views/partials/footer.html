@@ -1,4 +1,4 @@
-<footer class="section section-navy section-padded-xs">
+<footer class="section section-navy section-padded-xs" ng-controller="FooterCtrl">
     <div class="container">
         <div class="text-center">
             <a class="btn extra-padding-right-sm" target="_blank" href="https://www.facebook.com/www.nuage.group/">
@@ -13,10 +13,18 @@
                     <h6 class="text-center">Scan to follow us on wechat</h6>
                 </div>
             </div>
+            <md-input-container>
+                <md-select ng-model="chosedLanguage" aria-label="select language" style="background: white !important">
+                    <md-option ng-repeat="language in languages" value="{{language.value}}">
+                        <img ng-src={{language.icon}} style="margin-right: 5px">
+                        {{language.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
         </div>
         <div class="text-center">
             <h5 class="text-white display-inline">Nuage Group LLC.</h5>
-            <h5 class="text-white display-inline"> &copy; 2013 - 2018 | All Right Reserved.</h5>
+            <h5 class="text-white display-inline"> &copy; 2013 - {{ currentYear }} | All Right Reserved.</h5>
         </div>
     </div>
 </footer>

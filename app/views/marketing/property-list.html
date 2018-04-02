@@ -1,0 +1,50 @@
+<section class="section section-padded-md section-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <md-input-container style="width: 100%">
+                    <label>City</label>
+                    <md-select ng-model="selectedCity"
+                               md-on-close="clearSearchTerm()"
+                               data-md-container-class="selectdemoSelectHeader">
+                        <md-select-header class="demo-select-header">
+                            <input ng-model="searchTerm"
+                                   type="search"
+                                   placeholder="Search for a city"
+                                   class="demo-header-searchbox md-text">
+                        </md-select-header>
+                        <md-optgroup label="city">
+                            <md-option ng-value="city" ng-repeat="city in cities |filter:searchTerm">{{city}}</md-option>
+                        </md-optgroup>
+                    </md-select>
+                </md-input-container>
+            </div>
+            <div class="col-xs-3">
+                <label>Min.</label>
+                <md-slider-container>
+                    <md-slider step="1000" min="1000" max="5000000" aria-label="Minimum price"></md-slider>
+                </md-slider-container>
+            </div>
+            <div class="col-xs-3">
+                <label>Max.</label>
+                <md-slider-container>
+                    <md-slider step="1000" min="1000" max="5000000" aria-label="Maximum price"></md-slider>
+                </md-slider-container>
+            </div>
+            <div class="col-xs-3">
+                <md-input-container style="width: 100%">
+                    <label>City</label>
+                    <md-select>
+                        <md-option>
+                            dfsfdsf
+                        </md-option>
+                        <md-option>
+                            fdsfdsfdsfdsf
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+</section>
+x
