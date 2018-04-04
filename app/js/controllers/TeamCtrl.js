@@ -34,8 +34,9 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 email: 'y.cheng0907@gmail.com',
                 phoneNumber: '1(917)345-9488',
                 location: 'Boston',
+                wechatId: 'AmelieCheng0907',
                 profileImageURI: './images/employees/acheng.jpg',
-                language: 'English, Chinese (Mandarin)',
+                language: 'English, Chinese (Mandarin/Taiwanese)',
                 certificate: null
             }),
             new Employee({
@@ -271,8 +272,9 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
                 email: 'y.cheng0907@gmail.com',
                 phoneNumber: '1(917)345-9488',
                 location: 'Boston',
+                wechatId: 'AmelieCheng0907',
                 profileImageURI: './images/employees/acheng.jpg',
-                language: '英文, 普通话',
+                language: '英文, 普通话, 台语',
                 certificate: null
             }),
             new Employee({
