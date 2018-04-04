@@ -20,5 +20,5 @@ angular.module('nuageInvestment').controller('FooterCtrl', ['$scope', '$rootScop
             if (newVal && oldVal && oldVal !== newVal) {
               LanguageDataService.setLanguage(newVal);
             }
-        })
+        });
     }]);

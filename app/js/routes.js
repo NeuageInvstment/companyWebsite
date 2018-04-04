@@ -63,7 +63,7 @@ angular.module('nuageInvestment').config(['$stateProvider', '$urlRouterProvider'
                 //  MARKETING - PROPERTY LIST
                 // --------------------------------------------------------- //
                 .state('marketing.property-list', {
-                    url: '/property-list',
+                    url: '/property-list?&type&locality&minPrice&maxPrice&minBeds&minBaths&limit&offset',
                     controller: 'PropertyListCtrl',
                     templateUrl: '/views/marketing/property-list.html',
                     onEnter: [function() {

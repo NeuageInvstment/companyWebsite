@@ -576,3 +576,29 @@ form {
 .selectdemoSelectHeader md-content._md {
     max-height: 240px;
 }
+
+md-button-group {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0;
+    margin: 6px 8px;
+    min-height: 36px;
+    min-width: 200px;
+}
+
+md-button-group.md-raised:not([disabled]) {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+md-button-group > .md-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0;
+    border: 0;
+    min-width: 100px;
+    margin: 0;
+
+    &.btn-selected {
+        background: #ccc !important;
+    }
+}

@@ -16,8 +16,8 @@
             <md-input-container>
                 <md-select ng-model="chosedLanguage" aria-label="select language" style="background: white !important">
                     <md-option ng-repeat="language in languages" value="{{language.value}}">
-                        <img ng-src={{language.icon}} style="margin-right: 5px">
-                        {{language.name}}
+                        <img ng-src={{language.icon}} style="margin-right: 5px; margin-left: 5px; margin-bottom: 4px">
+                        <h5 style="display: inline">{{language.name}}</h5>
                     </md-option>
                 </md-select>
             </md-input-container>

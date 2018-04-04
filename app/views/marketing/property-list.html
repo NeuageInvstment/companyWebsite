@@ -1,9 +1,15 @@
 <section class="section section-padded-md section-light-gray">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-3">
+        <div class="row extra-padding-bottom-md">
+            <div class="col-md-4">
+                <md-button-group class="md-raised">
+                    <md-button ng-click="setSalesType('buy')" ng-class="{'btn-selected': salesType === 'buy'}">Buy</md-button>
+                    <md-button ng-click="setSalesType('rent')" ng-class="{'btn-selected': salesType === 'rent'}">Rent</md-button>
+                </md-button-group>
+            </div>
+            <div class="col-md-4">
                 <md-input-container style="width: 100%">
-                    <label>City</label>
+                    <label style="font-size: 18px; color: black">City</label>
                     <md-select ng-model="selectedCity"
                                md-on-close="clearSearchTerm()"
                                data-md-container-class="selectdemoSelectHeader">
@@ -19,32 +25,47 @@
                     </md-select>
                 </md-input-container>
             </div>
-            <div class="col-xs-3">
-                <label>Min.</label>
+            <div class="col-md-4">
+                <label>Min. {{minPrice | currency:"$":0}}</label>
                 <md-slider-container>
-                    <md-slider step="1000" min="1000" max="5000000" aria-label="Minimum price"></md-slider>
+                    <md-slider step={{minPriceStep}} min="10000" max="2000000" aria-label="Minimum price" ng-model="minPrice"></md-slider>
                 </md-slider-container>
             </div>
-            <div class="col-xs-3">
-                <label>Max.</label>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Max. {{maxPrice | currency:"$":0}}</label>
                 <md-slider-container>
-                    <md-slider step="1000" min="1000" max="5000000" aria-label="Maximum price"></md-slider>
+                    <md-slider step={{maxPriceStep}} min="10000" max="2000000" aria-label="Maximum price" ng-model="maxPrice"></md-slider>
                 </md-slider-container>
             </div>
-            <div class="col-xs-3">
+            <div class="col-md-4">
                 <md-input-container style="width: 100%">
-                    <label>City</label>
-                    <md-select>
-                        <md-option>
-                            dfsfdsf
-                        </md-option>
-                        <md-option>
-                            fdsfdsfdsfdsf
-                        </md-option>
+                    <label style="font-size: 18px; color: black">Mins beds</label>
+                    <md-select ng-model="minBeds"
+                               data-md-container-class="selectdemoSelectHeader">
+                        <md-optgroup label="Min. Bed">
+                            <md-option ng-value="bed" ng-repeat="bed in numBedBath">{{bed}}</md-option>
+                        </md-optgroup>
+                    </md-select>
+                </md-input-container>
+            </div>
+            <div class="col-md-4">
+                <md-input-container style="width: 100%">
+                    <label style="font-size: 18px; color: black">Mins baths</label>
+                    <md-select ng-model="minBaths"
+                               data-md-container-class="selectdemoSelectHeader">
+                        <md-optgroup label="Min. Bed">
+                            <md-option ng-value="bed" ng-repeat="bed in numBedBath">{{bed}}</md-option>
+                        </md-optgroup>
                     </md-select>
                 </md-input-container>
             </div>
         </div>
     </div>
 </section>
-x
+<section class="section section-padded-md">
+    <div layout="row" layout-sm="column" layout-align="space-around" ng-if="isLoading.properties">
+      <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+    </div>
+</section>
