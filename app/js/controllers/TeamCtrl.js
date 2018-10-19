@@ -41,7 +41,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
             }),
             new Employee({
                 fullName : 'Bin Shen',
-                title : 'Senior Associate',
+                title : 'Senior Associate | Business Development Manager',
                 email : 'shen.boston@gmail.com',
                 phoneNumber : '1(617)817-1782',
                 location : 'Boston',
@@ -279,7 +279,7 @@ angular.module('nuageInvestment').controller('TeamCtrl', ['$rootScope', '$scope'
             }),
             new Employee({
                 fullName : 'Bin Shen',
-                title : '高级顾问',
+                title : '高级顾问 | 业务发展经理',
                 email : 'shen.boston@gmail.com',
                 phoneNumber : '1(617)817-1782',
                 location : 'Boston',
