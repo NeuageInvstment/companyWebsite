@@ -213,7 +213,6 @@ module.exports = function(grunt) {
         'less',
         'cssmin',
         'rev',
-        'imagemin',
         'usemin',
         'htmlmin'
     ]);
